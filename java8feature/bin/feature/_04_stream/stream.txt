@@ -1,0 +1,175 @@
+
+@1. Classes in the new java.util.stream package provide a Stream API to support functional-style 
+	operations on streams of elements. The Stream API is integrated into the Collections API, 
+	which enables bulk operations on collections, such as sequential or parallel map-reduce transformations.
+	
+@2. A stream is a sequence of data values supporting sequential and parallel aggregate operations.
+	We use the aggregate functions in SQL more often. For example we can sum all sale figures 
+	for a month or a year. We can also get the max value for a give range.
+
+	An aggregate operation works on a list of item and results in a single value.
+
+	The result of an aggregate operation on stream may be a primitive value, an object, or a void for Stream. 
+	Like SQL we can calculate sum for all integers in a stream of integers.
+
+@3. Collections vs Streams
+	Java Collections focus on how to store data elements for efficient access.
+	Java streams focus on aggregate operations on data elements from a data source.
+
+	@3.1. Streams Features
+		Java Streams have its own features.
+
+	@3.2. No Storage
+		Java Streams have no storage.
+		A collection is an in-memory data structure that stores all its elements.
+		A stream has no storage. A stream pulls elements from a data source on-demand and passes 
+		them to a pipeline of operations for processing.
+		
+		For a collection we talk about the storage or how the data elements are stored, 
+		how to access data elements.
+		
+		For a stream we focus on the operations, for example, how to sum a stream.
+	
+	@3.3. Infinite Streams
+		A collection cannot represent a group of infinite elements whereas a stream can.
+		A stream can pull its elements from a data source. The data source can be a collection, 
+		a function that generates data, an I/O channel, etc.
+		A stream can pull data from from a function which generates infinite number of elements.
+	
+	@3.4. Not Reusable
+		Streams Are Not Reusable
+		A stream cannot be reused after calling a terminal operation.
+		To perform a computation on the same elements from the same data source, 
+		we have to recreate the stream pipeline.
+		A stream may throw an IllegalStateException in case of reusing.
+		
+@4. Java Streams - Java Stream Operation
+	External Iteration
+		When operating with Java Collections we use external iteration.
+	Internal Iteration
+		Iteration through collection internally by stream.
+	Sequential
+		The external iteration typically means sequential code. 
+		The sequential code can be executed only by one thread.
+		Streams are designed to process elements in parallel.
+	Imperative vs. Functional
+		In imperative programming we control not only what to do but also how to do it.
+		In declarative programming we just need to tell what to do, the how part is handled by the system itself.
+		Collections support imperative programming whereas streams support declarative programming.
+		The Streams API supports the functional programming by using lambda expression.
+	Intermediate operations Terminal operations
+		A stream supports two types of operations:
+
+			Intermediate operations
+			Terminal operations
+		Intermediate operations are also called lazy operations.
+		Terminal operations are also called eager operations.
+		A lazy operation does not process the elements until an eager operation is called on the stream.
+		An intermediate operation on a stream produces another stream.
+		Streams link operations to create a stream pipeline.
+	
+	Stateless and Stateful 
+		Stateless operations, such as filter and map, retain no state from previously seen element 
+		when processing a new element -- each element can be processed independently of operations 
+		on other elements.
+		
+		Stateful operations, such as distinct and sorted, may incorporate state from previously seen 
+		elements when processing new elements.
+		
+@5. Java Streams - Java Stream API
+	Stream-related interfaces and classes are in the java.util.stream package.
+	AutoCloseable interface is from the java.lang package
+	All stream interfaces inherit from the BaseStream interface, which inherits from the AutoCloseable interface.
+	
+	AutoCloseable
+ 	 |
+	 +--BaseStream
+	     |
+	     +--IntStream
+	     |
+	     +--LongStream
+	     |
+	     +--DoubleStream
+	     |
+	     +--Stream<T>
+    If the streams use collections as their data source, and collections do not need to be closed.
+
+	If a stream is based on a closeable data source such as a file I/O channel, we can create the stream 
+	using a try-with-resources statement to get it closed automatically.
+	
+	@5.1 Ordered Streams vs. unordered Streams
+	
+@6. Java Streams - Java Optional
+	Java 8 has introduced an java.util.Optional<T> class to deal with NullPointerException gracefully.
+	An Optional is a wrapper for a non-null value that may or may not contain a non-null value.
+	Methods that may return null should return an Optional instead of null.
+		
+	The isPresent() from Optional<T> returns true if it contains a non-null value, false otherwise.
+	get() method returns the non-null value if it contains a non-null value, 
+	and throws a NoSuchElementException otherwise.
+	
+@7. Java Streams - Java Stream Create
+	We can create stream in the following ways.
+
+		Create Streams from values
+		Create Streams from Empty streams
+		Create Streams from functions
+		Create Streams from arrays
+		Create Streams from collections
+		Create Streams from files
+		Create Streams from other sources
+    
+@8. Java Streams - Java Stream Operations
+	Distinct
+		Intermediate Operation
+		Returns a stream consisting of the distinct elements by checking equals() method.
+	filter
+		Intermediate Operation
+		Returns a stream that match the specified predicate.
+	flatMap
+		Intermediate Operation
+		Produces a stream flattened.
+	limit
+		Intermediate Operation
+		truncates a stream by number.
+	map
+		Intermediate Operation
+		Performs one-to-one mapping on the stream
+	peek
+		Intermediate Operation
+		Applies the action for debugging.
+	skip
+		Intermediate Operation
+		Discards the first n elements and returns the remaining stream. If this stream contains fewer than requested, 
+		an empty stream is returned.
+	sorted
+		Intermediate Operation
+		Sort a stream according to natural order or the specified Comparator. For an ordered stream, the sort is stable.
+	allMatch
+		Terminal Operation
+		Returns true if all elements in the stream match the specified predicate, false otherwise. 
+		Returns true if the stream is empty.
+	anyMatch
+		Terminal Operation
+		Returns true if any element in the stream matches the specified predicate, false otherwise. 
+		Returns false if the stream is empty.
+	findAny
+		Terminal Operation
+		Returns any element from the stream. Returns an empty Optional object for an empty stream.
+	findFirst
+		Terminal Operation
+		Returns the first element of the stream. For an ordered stream, it returns the first element; 
+		for an unordered stream, it returns any element.
+	noneMatch
+		Terminal Operation
+		Returns true if no elements in the stream match the specified predicate, false otherwise. 
+		Returns true if the stream is empty.
+	forEach
+		Terminal Operation
+		Applies an action for each element in the stream.
+	reduce
+		Terminal Operation
+		Applies a reduction operation to computes a single value from the stream.
+	
+	
+	

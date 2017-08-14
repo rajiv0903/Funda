@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><umlet_diagram><help_text>// Uncomment the following line to change the fontsize:
+// fontsize=14
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// Welcome to UMLet!
+//
+// Double-click on UML elements to add them to the diagram, or to copy them
+// Edit elements by modifying the text in this panel
+// Hold Ctrl to select multiple elements
+// Use Ctrl+mouse to select via lasso
+//
+// Use ± or Ctrl+mouse wheel to zoom
+// Drag a whole relation at its central square icon
+//
+// Press Ctrl+C to copy the whole diagram to the system clipboard (then just paste it to, eg, Word)
+// Edit the files in the "palettes" directory to create your own element palettes
+//
+// Select "Custom Elements &gt; New..." to create new element types
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// This text will be stored with each diagram;  use it for notes.</help_text><zoom_level>10</zoom_level><element><type>com.umlet.element.base.Class</type><coordinates><x>280</x><y>110</y><w>100</w><h>90</h></coordinates><panel_attributes>/Abstact Class/
+PizzaStore
+--
+createPizza()
+orderPizza(){}
+bg=light_gray</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>180</x><y>250</y><w>130</w><h>50</h></coordinates><panel_attributes>bt=*
+NYPizzaStore
+--
+createPizza(){}
+bg=yellow</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>370</x><y>250</y><w>140</w><h>50</h></coordinates><panel_attributes>bt=*
+ChicagoPizzaStore
+--
+createPizza(){}
+bg=yellow</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>260</x><y>460</y><w>140</w><h>210</h></coordinates><panel_attributes>/AbstractClass/
+Pizza
+--
+String name;
+String dough;
+String sauce;
+ArrayList toppings;
+--
+prepare(){}
+bake(){}
+cut(){}
+box(){}
+getName(){}
+bg=light_gray</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>20</x><y>750</y><w>150</w><h>50</h></coordinates><panel_attributes>bt=*
+NYStyleCheesePizza
+--
+
+bg=yellow</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>60</x><y>780</y><w>150</w><h>50</h></coordinates><panel_attributes>bt=*
+NYStyleClamPizza
+--
+
+bg=yellow</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>100</x><y>810</y><w>150</w><h>50</h></coordinates><panel_attributes>bt=*
+NYStylePepperoniPizza
+--
+
+bg=yellow</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>160</x><y>840</y><w>150</w><h>50</h></coordinates><panel_attributes>bt=*
+NYStyleVeggiePizza
+--
+
+bg=yellow</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>450</x><y>750</y><w>190</w><h>50</h></coordinates><panel_attributes>bt=*
+ChicagoStyleCheesePizza
+--
+
+bg=yellow</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>420</x><y>780</y><w>190</w><h>50</h></coordinates><panel_attributes>bt=*
+ChicagoStyleClamPizza
+--
+
+bg=yellow</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>360</x><y>810</y><w>190</w><h>50</h></coordinates><panel_attributes>bt=*
+ChicagoStylePepperoniPizza
+--
+
+bg=yellow</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>330</x><y>840</y><w>200</w><h>50</h></coordinates><panel_attributes>bt=*
+ChicagoStyleVeggiePizza
+--
+
+bg=yellow</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>220</x><y>170</y><w>100</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>80;30;30;80</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>340</x><y>170</y><w>120</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>30;30;100;80</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>60</x><y>640</y><w>250</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>230;30;30;110</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>350</x><y>640</y><w>220</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>30;30;200;110</additional_attributes></element><element><type>com.umlet.element.custom.Text</type><coordinates><x>80</x><y>80</y><w>200</w><h>50</h></coordinates><panel_attributes>Provides an abstract interface
+for creating one product</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.custom.Text</type><coordinates><x>0</x><y>200</y><w>260</w><h>40</h></coordinates><panel_attributes>Each subclass decides which concrete
+class to instatiate</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.custom.Text</type><coordinates><x>90</x><y>300</y><w>110</w><h>40</h></coordinates><panel_attributes>provides factory
+method</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.custom.Text</type><coordinates><x>230</x><y>760</y><w>180</w><h>40</h></coordinates><panel_attributes>subclasses are instantiated 
+by the factory method</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.custom.Text</type><coordinates><x>250</x><y>390</y><w>180</w><h>60</h></coordinates><panel_attributes>This is the product of
+PizzaStore. Client only
+rely on this abstarct type</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>50</x><y>270</y><w>200</w><h>480</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>30;460;180;30</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>430</x><y>270</y><w>190</w><h>480</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>170;460;30;30</additional_attributes></element><element><type>com.umlet.element.custom.Text</type><coordinates><x>60</x><y>440</y><w>190</w><h>60</h></coordinates><panel_attributes>The NYPizzaStore subclass
+only instantiate NY style 
+pizzas</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.custom.Text</type><coordinates><x>450</x><y>450</y><w>240</w><h>60</h></coordinates><panel_attributes>The ChicagoPizzaStore subclass
+only instantiate chicago style 
+pizzas</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.custom.Text</type><coordinates><x>400</x><y>50</y><w>290</w><h>130</h></coordinates><panel_attributes>PizzaStore is implemented as a 
+Factory method because we want to be able
+to create a product that varies by region.
+With the factory method each region gets it
+owns concrete factory that knowns
+how to make pizzas which are appropriate
+for the are
+</panel_attributes><additional_attributes/></element></umlet_diagram>

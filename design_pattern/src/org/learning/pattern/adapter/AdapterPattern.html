@@ -1,0 +1,65 @@
+<b>Adapter Pattern:</b>
+<br/>
+Converts one interface to another<br/>
+It converts the interface of class into another interface the clients except.<br/>
+Adapter lets classes work together that couldn't otherwise because of incompatible interfaces. 
+<hr/>
+<p> 
+<hr/>
+<br/>
+You've got an existing software system that you need to work a new vendor class library<br/>
+into, but the new vendor designed their interfaces differently than the last vendor: 
+Hope you remember the DuckSimulator (Strategy pattern):
+It has two method:
+	<ol>
+		<li>quack();</li>
+		<li>fly();</li>
+	</ol>
+Now it's time to meet the newest fowl on the block:
+Turkey:
+	<ol>
+		<li>gobble(); (don't quack)</li>
+		<li>fly(); (They can fly small distance)</li>
+	</ol>
+</p>
+<hr/>
+<p>
+<b>Question &amp; Condition:</b>
+	<ol>
+		<li>You don't want to solve the problem by changing your existing code (and you can't<br/>
+			change the vendor's code)
+		</li>
+		<li>"An un-coupled client is a happy client"- Client only knows Target interface</li>
+	</ol> 
+<hr/>
+<b>Solutions &amp; Design principles:</b>
+	<ol>
+		<li>We will use Adapter pattern:<br/>
+			We will provide a Adapter class in-between Duck and Turkey (Adaptee) and<br/>
+			Adapter class is responsible to translate the request into new request, so client<br/>
+			did not to know what is happening underline.
+		</li>
+		<li>Two kinds of Adapter Pattern:
+			<ol>
+				<li>Object Adapters:<br/>
+					In Object adapter Adapter use composition to adopt a Adaptee				
+				</li>
+				<li>Class Adapters:<br/>
+					In Class adapter Adapter do not use composition to adopt a Adaptee.<br/>
+					The Adapter now subclasses the Adaptee and the Target classes.					
+				</li>
+			</ol>
+		</li>
+	</ol>
+<hr/>	
+<b>So Object Oriented Principles:</b>
+	<ul>
+	  <li> Encapsulate what varies </li>
+	  <li> Favor composition over inheritance (HAS-A can be better than IS-A)</li>
+	  <li> Program to interfaces, not to implementations</li>
+	  <li> Strive for loosely coupled designs between objects that interact</li>
+	  <li> Class should be open for extension but closed for modification</li>
+	  <li> Depend on abstraction. Do not depend on concretion</li>
+	  <li> Only talk to your fiends (Facade Pattern..will come soon)</li>
+	</ul>
+</p>

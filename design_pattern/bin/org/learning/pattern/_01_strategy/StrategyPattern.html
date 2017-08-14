@@ -1,0 +1,64 @@
+<b>Strategy Pattern:</b>
+<br/>
+It defines a family of algorithms, encapsulate each one, makes them interchangeable.<br/>
+Strategy lets the algorithm vary independently from clients that use it.
+<hr/>
+<p> 
+Duck is a super type of followings:
+	<ul>
+	  <li> MallarDuck </li>
+	  <li> RedheadDuck</li>
+	  <li> RubberDuck</li>
+	  <li> DecoyDuck</li>
+	  <li> ModelDuck</li>
+	</ul>
+<hr/>
+<br/>
+  Duck itself is not our actual business entity,
+  so we will never create an instance of Duck.<br/>
+  But as mentioned all 4(s) duck is our actual 
+  business object, but as they have some common behavior<br/> 
+  so we will create a super type Duck as abstract class
+  so that we can re-use some behavior<br/>
+  say: swim
+  Now any Duck can have set of following behaviors:
+  	<ul>
+	  <li> swim </li>
+	  <li> display</li>
+	  <li> fly</li>
+	  <li> quack</li>
+	</ul>
+</p>
+<hr/>
+<p>
+<b>Question &amp; Condition:</b>
+	<ol>
+		<li>How can a rubber duck fly?</li>
+		<li>Not all duck can quack</li>
+		<li>Fly and quack behavior will not be same for all duck</li>
+		<li>In future there can be a new Duck with new fly and quack behavior</li>
+	</ol> 
+<hr/>
+<b>Solutions &amp; Design principles:</b>
+	<ol>
+		<li>Encapsulate what can vary- say for fly and quack we will follow encapsulation</li>
+		<li>Programming to an interface (programming to super type) not to implementation <br/>
+			Say: Dog d = new Dog(); d.makeSound(); (program to an implementation)
+				 Animal a = new Dog(); a.makeSound(); (program to interface)
+		</li>
+		<li>HAS-A can be better than IS-A<br/>
+			Say: Each Duck has a FlyBehavior and QuarkBehavior to which it delegates flying and quacking
+			<br/>
+			Here we are using <b>Composition</b><br/>
+			Instead of inheriting their behavior the ducks get their behavior by being composed with the right behavior object
+		</li>
+		<li>We will use strategy pattern</li>
+	</ol> 
+<hr/>	
+<b>So Object Oriented Principles:</b>
+	<ul>
+	  <li> Encapsulate what varies </li>
+	  <li> Favor composition over inheritance (HAS-A can be better than IS-A)</li>
+	  <li> Program to interfaces, not to implementations</li>
+	</ul>
+</p>

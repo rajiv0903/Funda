@@ -1,0 +1,61 @@
+<b>Observer Pattern:</b>
+<br/>
+It defines a one-to-many dependency between objects so that when one<br/>
+object changes state, all its dependents are notified and updated automatically.
+<hr/>
+<p> 
+We have to design weather displaying software. Lets take a small example of publishing newspapers.
+Here:
+Publishers + Subscribers = Observer pattern<br/>
+Now come to our problem:
+We have to design the application in such a way so that in future we can add another display unit.
+For now we have been asked for three display units and these are:
+	<ol>
+		<li>Current Condition Display</li>
+		<li>Forecast Display</li>
+		<li>Statistical Display</li>
+	</ol>
+	Later on we need to add HeatIndex Display unit
+</p>
+<hr/>
+<p>
+<b>Question &amp; Condition:</b>
+	<ol>
+		<li>A subscriber should always being notified about latest version of newspapers</li>
+		<li>A new subscriber can subscribes for newspapers</li>
+		<li>An existing subscriber can un-subscribe</li>
+	</ol> 
+Here: 
+Publisher- Subject
+Subscriber- Observer
+<hr/>
+<b>Solutions &amp; Design principles:</b>
+	<ol>
+		<li>Here we should not tightly coupled the subject and observer<br/>
+			If we do so, then it will not be maintainable code as there can be a<br/>
+			new subscriber subscribe for newspapers or existing subscriber can un-subscribe<br/>
+			<b>So there should be loose coupling between Subject and observer</b>, even Subject will not<br/>
+			take care of observer ( a new or existing one) 
+		</li>
+		<li>We can use java in-built API:<br/>
+			java.util.Observable (Class)
+			java.util.Observer (Interface)
+			Draw Back: 
+			<ol>
+				<li>Order of output is not user predictable</li>
+				<li>Since java.util.Observable is a class so violates- Favor composition over inheritance</li>
+				<li>We can add one class which is already a sub type of a generalized class</li>
+			</ol>
+		</li>
+		<li>We will use observer pattern</li>
+		<li>An example of observer pattern: JButton event action listener</li>
+	</ol> 
+<hr/>	
+<b>So Object Oriented Principles:</b>
+	<ul>
+	  <li> Encapsulate what varies </li>
+	  <li> Favor composition over inheritance (HAS-A can be better than IS-A)</li>
+	  <li> Program to interfaces, not to implementations</li>
+	  <li> Strive for loosely coupled designs between objects that interact</li>
+	</ul>
+</p>

@@ -1,0 +1,6 @@
+1. Create a new HashTable class. Implement the hash table data structure using open 
+	addressing (quadratic probing). Think about, why do we need to override the hashcode 
+	method in java, in case one wants to use custom objects to be used as keys to a hash table. 
+	You can call the hashcode method to get the int rep of the object, and then call 
+	the hash function on that integer. After completing the above exercise, put some records 
+	in your hash table and see (using a debugger), how the underlying array data structure looks like.

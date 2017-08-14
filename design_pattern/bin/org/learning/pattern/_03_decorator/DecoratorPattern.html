@@ -1,0 +1,72 @@
+<b>Decorator Pattern:</b>
+<br/>
+It attach additional responsibilities to an object dynamically<br/>
+It provides a flexible alternative to subclassing for extending functionality.
+<hr/>
+<p> 
+<hr/>
+<br/>
+ Starbuzz wants to design a coffee shop and asked for an automated application to calculate the cost<br/>
+ Here Beverage is not an actual entity in our business. The actual entities for our business are:<br/>
+ <ul>
+ 	<li>HouseBlend</li>
+ 	<li>DarkRoast</li>
+ 	<li>Decaf</li>
+ 	<li>Espresso</li>
+ </ul>
+and our decorators are:
+	<ul>
+		<li>Whip</li>
+		<li>Milk</li>
+		<li>Mocha</li>
+	</ul>
+ So we can have one abstract class say: Beverage, and our actual business entity object will<br/>
+ subclass the Beverage class<br/>
+ All types of beverage may or may not have condiments (say: steamed milk, soy, mocha), then can calculate the<br/>
+ the all type of condiment cost in Beverage class and then later we all add the cost specific to our actual business entity object<br/>
+ See the Q &amp; Condition section  
+</p>
+<hr/>
+<p>
+<b>Question &amp; Condition:</b>
+	<ol>
+		<li>Price changes for condiments will force us to alter existing code</li>
+		<li>New condiments will force us to add new methods and alter the cost method in super class</li>
+		<li>We may have a new beverages. For some of these beverages (Iced tea?), the condiments may not be appropriate, <br/>
+			yet the Tea subclass will still inherit methods like hashWhip()
+		</li>
+		<li>What if a customer wants a double mocha????</li>
+	</ol> 
+<hr/>
+<b>Solutions &amp; Design principles:</b>
+	<ol>
+		<li>We will not have our condiment cost and condiment in our Beverage</li>
+		<li>We will use Decorator pattern:<br/>
+			Say take the darkRoast object
+			then decorate it with Mocha object
+			then decorate it with Whip object
+			call the cost() method and rely on delegation to add on the condiment costs
+		</li>
+		<li>Key features of Decorator Pattern:
+			<ol>
+				<li>Mirror- Same object type</li>
+				<li>Decorator have the same supertype as the objects they decorate<br/>
+					Say: Whip is a decorator, so it also mirrors DarkRoast's type and includes a cost() method
+				</li>
+				<li>You can use one or more decorators to wrap an object</li>
+				<li>Given that the decorator has the same supertype as the object it decorates, we can pass around a decorated object inplace of the original (wrapped) object</li>
+				<li>The decorator adds its own behavior either before and/or after delegating to the object it decorates to do the rest of the job</li>
+				<li>Objects can be decorated at any time, so we can decorate objects dynamically at runtime with as many decorators as we like</li>
+			</ol>
+		</li>
+	</ol>
+<hr/>	
+<b>So Object Oriented Principles:</b>
+	<ul>
+	  <li> Encapsulate what varies </li>
+	  <li> Favor composition over inheritance (HAS-A can be better than IS-A)</li>
+	  <li> Program to interfaces, not to implementations</li>
+	  <li> Strive for loosely coupled designs between objects that interact</li>
+	  <li> Class should be open for extension but closed for modification</li>
+	</ul>
+</p>

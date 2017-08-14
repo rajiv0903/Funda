@@ -1,0 +1,43 @@
+<b>Factory Method Pattern:</b>
+<br/>
+It defines an interface for creating an object, but lets subclasses decide which 
+class to instantiate. Factory Method lets a class defer instantiation to subclasses. 
+<hr/>
+<p> 
+<hr/>
+<br/>
+ Building a PizzaFactory. We can have following pizza stores.<br/> 
+ <ul>
+ 	<li>NewYork Pizza Store</li>
+ 	<li>Chicago Pizza Store</li>
+ </ul>
+So here above mentioned two are <b>Creator</b>.<br/>
+Now each pizza store will provide the different types of pizza:<br/>
+	<ul>
+	 	<li>Cheese pizza</li>
+	 	<li>Veggie pizaa</li>
+	 </ul>
+	 and more..<br/>
+So the different types of pizza(s) are our <b>Product</b><br/>
+Please Note: The cheese pizza of NewYork will not be same as Chicago.<br/>
+</p>
+
+<hr/>
+<p>
+<b>Solutions &amp; Design principles:</b>
+	<ol>
+		<li>We will use Factory Method pattern:<br/>
+			Encapsulate the object creation. 
+			Let the subclasses decide which object to instantiate.
+		</li>
+	</ol>
+<hr/>	
+<b>So Object Oriented Principles:</b>
+	<ul>
+	  <li> Encapsulate what varies </li>
+	  <li> Favor composition over inheritance (HAS-A can be better than IS-A)</li>
+	  <li> Program to interfaces, not to implementations</li>
+	  <li> Strive for loosely coupled designs between objects that interact</li>
+	  <li> Class should be open for extension but closed for modification</li>
+	</ul>
+</p>

@@ -1,0 +1,3 @@
+1. Implement the Quick sort algorithm from the pseudo code shown in the lectures.
+2. Implement the Shell sort algorithm.
+3. Implement the Counting sort algorithm.

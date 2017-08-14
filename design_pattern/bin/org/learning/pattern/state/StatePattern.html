@@ -1,0 +1,54 @@
+<b>State Pattern:</b>
+<br/>
+It allows an object to alter its behavior when its internal state changes.<br/>
+The object will appear to change its class.<br/>
+<hr/>
+What does it mean for an object to "appear to change its class?"<br/>
+Think about it from the perspective of client: if an abject you are using can<br/>
+completely change its behavior, then it appears to you that the object is actually<br/>
+instantiated from another class. In reality, however, you know that we are using composition<br/>
+to give the appearance of a class by simply referencing different state objects.<br/> 
+<p> 
+Lets start with a Gumball M/c design. It has different states and these are:
+	<ul>
+		<li>No Quarter</li>
+		<li>Has Quarter</li>
+		<li>Out of Gumballs</li>
+		<li>Gumball sold</li>
+	</ul>
+Now lets gather all the actions that can happen in the system, and these are:
+	<ul>
+		<li>insert quarter</li>
+		<li>turns crank</li>
+		<li>eject quarter</li>
+		<li>dispense</li>
+	</ul>
+In future we can have a new state "Winer State" in our system.
+So design should be flexible enough to adopt any new state.
+</p>
+<hr/>
+<p>
+<b>Question &amp; Condition:</b>
+	<ol>
+		<li>In future a new state can be added</li>
+		<li> In future a new action can be added along with new state</li>
+	</ol> 
+<hr/>
+<b>Solutions &amp; Design principles:</b>
+	<ol>
+		<li>We will use state pattern, so that we can add new state and action in future</li>
+	</ol> 
+<hr/>	
+<b>So Object Oriented Principles:</b>
+	<ul>
+	  <li> Encapsulate what varies </li>
+	  <li> Favor composition over inheritance (HAS-A can be better than IS-A)</li>
+	  <li> Program to interfaces, not to implementations</li>
+	  <li> Strive for loosely coupled designs between objects that interact</li>
+	  <li> Class should be open for extension but closed for modification</li>
+	  <li> Depend on abstraction. Do not depend on concretion</li>
+	  <li> Only talk to your fiends (Facade Pattern..will come soon)</li>
+	  <li> Don't call us, we'll call you.</li>
+	  <li> A class should have only one reason to change</li>
+	</ul>
+</p>

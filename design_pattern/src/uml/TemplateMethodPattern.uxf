@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><umlet_diagram><help_text>// Uncomment the following line to change the fontsize:
+// fontsize=14
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// Welcome to UMLet!
+//
+// Double-click on UML elements to add them to the diagram, or to copy them
+// Edit elements by modifying the text in this panel
+// Hold Ctrl to select multiple elements
+// Use Ctrl+mouse to select via lasso
+//
+// Use ± or Ctrl+mouse wheel to zoom
+// Drag a whole relation at its central square icon
+//
+// Press Ctrl+C to copy the whole diagram to the system clipboard (then just paste it to, eg, Word)
+// Edit the files in the "palettes" directory to create your own element palettes
+//
+// Select "Custom Elements &gt; New..." to create new element types
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// This text will be stored with each diagram;  use it for notes.</help_text><zoom_level>10</zoom_level><element><type>com.umlet.element.base.Class</type><coordinates><x>280</x><y>110</y><w>160</w><h>90</h></coordinates><panel_attributes>&lt;&lt;AbstractClass&gt;&gt;
+--
+templateMethod()
+primitiveOperation1()
+primitiveOperation2()
+</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>290</x><y>270</y><w>150</w><h>80</h></coordinates><panel_attributes>ConcreteClass
+--
+primitiveOperation1()
+primitiveOperation2()
+
+</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>330</x><y>170</y><w>50</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>30;30;30;100</additional_attributes></element><element><type>com.umlet.element.custom.Text</type><coordinates><x>90</x><y>70</y><w>160</w><h>60</h></coordinates><panel_attributes>The AbstractClass
+contains the template
+method</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.custom.Text</type><coordinates><x>0</x><y>170</y><w>160</w><h>60</h></coordinates><panel_attributes>..and abstarct version
+of the operations used
+in the template method.</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.custom.Text</type><coordinates><x>100</x><y>340</y><w>170</w><h>90</h></coordinates><panel_attributes>There may be many 
+ConcreteClasses: each 
+implementing the full set
+of operations required by 
+the template method.</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.custom.Text</type><coordinates><x>460</x><y>330</y><w>260</w><h>90</h></coordinates><panel_attributes>The ConcreteClass implements the 
+abstract operations, which are called 
+when the templateMethod() needs them.</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.custom.Text</type><coordinates><x>490</x><y>0</y><w>270</w><h>90</h></coordinates><panel_attributes>The template method makes use of the 
+primitiveOperations to implement an 
+algorithm. It is decoupled from the actual
+implementation of these operations.</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Note</type><coordinates><x>520</x><y>120</y><w>160</w><h>40</h></coordinates><panel_attributes>primitiveOperation1();
+primitiveOperation2();
+</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>190</x><y>20</y><w>140</w><h>110</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>120;90;120;30;50;30;30;50</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>100</x><y>140</y><w>190</w><h>130</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>170;30;60;110;30;90</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>230</x><y>140</y><w>60</w><h>50</h></coordinates><panel_attributes>lt=&lt;(
+</panel_attributes><additional_attributes>40;30;30;30</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>130</x><y>280</y><w>170</w><h>80</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>150;30;30;30;60;60</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>410</x><y>270</y><w>190</w><h>80</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>30;30;170;30;140;60</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>540</x><y>40</y><w>80</w><h>90</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>60;70;60;50;30;30</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>600</x><y>140</y><w>120</w><h>200</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>30;30;100;90;30;180</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>370</x><y>110</y><w>170</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>30;30;150;30</additional_attributes></element></umlet_diagram>

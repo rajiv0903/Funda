@@ -1,0 +1,2 @@
+1. Implement ascending heap (the node at the root is smallest). 
+	Make sure that all operations(insert/update/delete) work correctly.

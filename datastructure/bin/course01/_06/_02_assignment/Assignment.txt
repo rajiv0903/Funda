@@ -1,0 +1,12 @@
+1. Write an add method, which takes two positive integers and returns their sum. Of course, 
+	for this problem, you need to use recursion. Think about what would be the base case 
+	(when a number becomes 0?).
+	
+2. Write a recursive method to calculate the sum of squares of the first n natural numbers. 
+	n is to be given as an input.
+	
+3. What is the time complexity of the 'Tower of Hanoi' problem? Modify the program to 
+	track the number of moves (every time a disc is moved from one tower to another) and 
+	print it when the program completes execution.
+	See how it changes when you change the number of discs to be moved. 
+	Does that give you an idea of time complexity?

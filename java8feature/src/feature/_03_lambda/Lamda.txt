@@ -1,0 +1,130 @@
+
+@1. A lambda expression is an unnamed function with parameters and a body.
+
+@2. -> separates the parameters and the body.
+
+@3. The general syntax for using lambda expressions is
+	(Parameters) -> { Body }
+	-> separates parameters and lambda expression body
+	
+@4. Explicit and implicit lambda expression
+	A lambda expression which does not declare the its parameters' type is called implicit lambda expression.
+	An explicit lambda expression is a lambda expression which declares its parameters' type.
+	The compiler will infer the types of parameters for implicit lambda expression.
+	
+@5. Omitting Parameter Types
+	(x, y) -> { return x + y; }
+	
+	Single Parameter
+	(String msg) -> {System.out.println(msg);}
+	(msg)->{System.out.println(msg);}
+	msg -> { System.out.println(msg); }
+	
+	No Parameters
+	() -> { System.out.println("hi"); }
+	
+	final Modifier
+	(final int x, final int y) -> { return x + y; }
+	(int x, final int y) -> {return x + y;}
+	
+@6. Functional Interface instance check 
+	A lambda expression represents an instance of a functional interface.
+	One lambda expression may map to different functional interface types depending on the context.
+	The compiler infers the type of a lambda expression.
+	
+@7.	Lambda Behaviour Parameter
+	We can pass lambda expressions to methods as arguments.
+	If we have two Functional Interface with different parameter then we need to explicitly mention the type
+	
+@8. Lambda expressions can be used only in the following four contexts.
+	Assignment Context
+	Method Invocation Context
+	Return Context
+	Cast Context
+	
+@9. Java Functional Interface Definition
+	A functional interface is an interface that has one abstract method.
+	We cannot use the following types of methods to declare a functional interface:
+
+	Default methods
+	Static methods
+	Methods inherited from the Object class
+	
+	Generic Functional Interface
+	We can use type parameters with a functional interface to create generic functional interface.
+	
+@10. Java 8 introduced a new type called an intersection type
+	An intersection type is an intersection of multiple types.
+	An intersection type may appear as the target type in a cast.
+	An ampersand is used between two types as Type1 & Type2 to represent a new type 
+	that is an intersection of Type1, Type2.
+	
+@11. Java Function Interface
+	There are six specializations of the Function<T, R> interface:
+
+	IntFunction<R>
+	LongFunction<R>
+	DoubleFunction<R>
+	ToIntFunction<T>
+	ToLongFunction<T>
+	ToDoubleFunction<T>
+	
+	IntFunction<R>, LongFunction<R>, and DoubleFunction<R> take an int, a long, and a double as an argument, 
+	respectively, and their return value is in type R.
+
+	ToIntFunction<T>, ToLongFunction<T>, and ToDoubleFunction<T> take an argument of type T and 
+	return an int, a long, and a double, respectively.
+	
+	
+@12. Java Lambda - Java Predicate Interface
+	Predicate interface contains the following default and static methods.
+
+	We can use NOT, AND, and OR methods to create a predicate based on other predicates.
+
+	default  Predicate<T> negate()
+	default  Predicate<T> and(Predicate<? super T> other)
+	default  Predicate<T> or(Predicate<?  super T> other)
+	static <T> Predicate<T> isEqual(Object  targetRef)
+	
+	negate() negates a Predicate from the original predicate.
+	and() combines two predicates with a short-circuiting logical AND.
+	or() combines two predicates with a short-circuiting logical OR.
+	isEqual() returns a predicate that tests if two arguments are equal according to Objects.equals(Object, Object).
+
+	We can chain the above methods to create complex predicates.
+	
+@13. Java Lambda - Java Static Method Reference
+	A method reference creates a lambda expression using an existing method.
+	The general syntax for a method reference is
+
+	Qualifier::MethodName
+	The MethodName is the name of the method.
+	Qualifier tells where to find the method reference
+	
+	Types of Method References
+	There are six types of method reference.
+
+	TypeName::staticMethod - reference to a static method of a class, an interface, or an enum
+	objectRef::instanceMethod - reference to an instance method
+	ClassName::instanceMethod - reference to an instance method from a class
+	TypeName.super::instanceMethod - reference to an instance method from the supertype of an object
+	ClassName::new - reference to the constructor of a class
+	ArrayTypeName::new - reference to the constructor of the specified array type
+	
+@14. Java Lambda Expression Scope
+	A lambda expression does not define a scope of its own.
+
+	If we use keywords this and super in lambda expression inside a method, 
+	they act the same as we use them in that method.
+	
+@15. Java Lambda Variable Capture
+		A lambda expression can access final local variables or local-non-final-initialized-only-once variables.
+		We cannot change the value defined outside lambda expression
+		We can change the non-local variable in lambda expression.
+		
+@16. Java Lambda Body Statements
+	We can use statements such as break, continue, return, and throw inside the body of a lambda expression.
+	We cannot use the jump statements to do non-local jump.
+
+@17. Java Lambda - Java Recursive Lambda
+	We can use a method reference when creating a recursive lambda expressions.

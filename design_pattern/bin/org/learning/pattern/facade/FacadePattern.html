@@ -1,0 +1,42 @@
+<b>Facade Pattern:</b>
+<br/>
+Provides a unified interface to a set of interfaces in a subsystem.<br/>
+Facade defines a higher-level interface that makes the subsystem easier to use.<br/>
+<hr/>
+<p> 
+<hr/>
+<br/>
+User want's to watch movie in DVD. In order to watch movie user has to do some<br/> 
+set of operation sequentially rather than just one click to "watchMovie" and the same<br/>
+is true for "endMovie". So not user friendly.<br./>
+What user wants is that user will click on one button and set the movie user wants to watch<b/>
+and while setting off the system user wants to click one button "endMovie"<br/>
+</p>
+<hr/>
+<p>
+<b>Question &amp; Condition:</b>
+	<ol>
+		<li> In future we can add any subsystem in order to watch movie. We should be able to add<br/>
+			 any subsystem, but client should not bother about this new subsystem, user still want:<br/>
+			 "I will click "watchMovie" and "endMovie"
+		</li>
+		<li> We need to decouples a client from a complex subsystem.</li>
+	</ol> 
+<hr/>
+<b>Solutions &amp; Design principles:</b>
+	<ol>
+		<li>We will use Facade pattern</li>
+		<li> We can implement more than one facade for a subsystem</li>
+	</ol>
+<hr/>	
+<b>So Object Oriented Principles:</b>
+	<ul>
+	  <li> Encapsulate what varies </li>
+	  <li> Favor composition over inheritance (HAS-A can be better than IS-A)</li>
+	  <li> Program to interfaces, not to implementations</li>
+	  <li> Strive for loosely coupled designs between objects that interact</li>
+	  <li> Class should be open for extension but closed for modification</li>
+	  <li> Depend on abstraction. Do not depend on concretion</li>
+	  <li> Only talk to your fiends (Facade Pattern..will come soon)</li>
+	</ul>
+</p>
