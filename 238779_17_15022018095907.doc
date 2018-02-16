@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html
+    xmlns:o='urn:schemas-microsoft-com:office:office'
+xmlns:w='urn:schemas-microsoft-com:office:word'
+xmlns='http://www.w3.org/TR/REC-html40'>
+
+	<head>
+		<title></title>	
+<style type="text/css">
+    p.MsoFooter, li.MsoFooter, div.MsoFooter
+{
+    margin:0in;
+    margin-bottom:.0001pt;
+    mso-pagination:widow-orphan;
+    tab-stops:center 3.0in right 6.0in;
+    font-size:12.0pt;
+}
+ p.MsoHeader {
+        margin-left:4in;
+        }
+/*<style>*/
+<!-- /* Style Definitions */
+
+@page Section1
+{
+    size:8.5in 11.0in;
+    margin:1.0in 1.0in 1.0in 1.0in;
+    mso-header-margin:.5in;
+    mso-footer-margin:.5in;
+    mso-title-page:yes;
+    mso-header: h1;
+    mso-footer: f1;
+    mso-first-header: fh1;
+    mso-first-footer: ff1;
+    mso-paper-source:0;
+}
+
+
+div.Section1
+{
+    page:Section1;
+}
+
+div.Mainaddress
+{
+   text-align:left;
+    margin-left:4.5in;
+    /*page:Section1;*/
+}
+table#hrdftrtbl
+{
+    margin:0in 0in 0in 900in;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+body{
+	font-family:  "Times New Roman";/*Arial, Helvetica, sans-serif;*/
+    font-size: 16px;
+}
+.wrapperClientLetter{
+    width: 668px;
+    margin: 0 auto;
+    padding: 56px 110px 20px 30px;
+}
+.wrapper{
+	width: 668px;
+	margin: 0 auto;
+	padding: 56px 110px 20px 30px;
+}
+/*Css for 'Client Letter' starts here*/
+.letterHeader{
+	text-align: center;
+    /*font-size: 15px;*/
+}
+.letterBody{
+    /*font-size: 14px;*/
+}
+.letterBody .dateDiv{
+    margin-top: 25px;
+}
+.letterBody .addresseeName{
+    line-height: 3px;
+}
+.letterContents p{
+	margin-bottom: 22px;
+	line-height: 20px;
+}
+.letterContents p.smlsize{
+	font-size: 13px;
+}
+.letterFotter{
+	font-size: 13px;
+}
+/*Css for 'Client Letter' ends here*/
+
+/*Css for 'HR Letter' starts here*/
+.hnscHeader{
+	float: right;
+}
+.hnscHeader img{
+	margin-right: 10px;
+}
+.headAddress{
+	float: right;
+	line-height: 4px;
+	font-weight: 600;
+}
+.removeFloatRyt{
+	clear: both;
+}
+.hnscBodyContents{
+	/*font-size: 15px;*/
+	margin-left: 30px;
+}
+.hnscBodyContents .dateTxt{
+    font-weight: 800;
+    /*font-size: 14px;*/
+}
+.addresseeTxt, .addresserTxt{
+	line-height: 3px;
+}
+.hnscBodyContents .subject{
+ 	font-weight: 800;
+ 	font-size: 14px;
+ 	padding-top: 1px;
+ 	padding-bottom: 1px;
+}
+.benefitsList{
+	line-height: 20px;
+}
+.lineHt{
+    line-height: 19px;
+}
+.hnscBodyContents p{
+	text-align: justify;
+}
+/*Css for 'HR Letter' ends here*/
+
+/*Css for 'HR Letter HNSC Alone' starts here*/
+/*Css for 'HR Letter HNSC Alone' ends here*/
+
+/*Css for 'Manager Letter only for location change more than 50 miles' starts here*/
+.hnscBodyContents .dateTxt{
+    margin-bottom: 55px;
+}
+.hnscBodyContents .bold{
+	font-weight: 800;
+}
+.addresserTxt{
+    margin-top: 28px;
+}
+.hnscBodyContents div{
+	margin-bottom: 25px;
+}
+/*Css for 'Manager Letter only for location change more than 50 miles' ends here*/
+
+/*Css for 'Manager Letter percentage only for location change more than 50 miles' starts here*/
+.hnscBodyContents table {
+    border-collapse: collapse;
+}
+.hnscBodyContents th, .hnscBodyContents td{
+	border: 1px solid #207da8;
+	text-align: center;
+}
+.hnscBodyContents th{
+	/*font-size: 18px;*/
+}
+.hnscBodyContents table td p{
+	text-align: justify;
+	margin-top: -15px;
+}
+table td .tbold{
+	font-weight: 600;
+}
+
+table td{
+	padding: 5px;
+}
+/*Css for 'Manager Letter percentage only for location change more than 50 miles' ends here*/
+
+/*Css for 'Manager Letter Standard Template' starts here*/
+.hnscBodyContentsST{
+	/*font-size: 15px;*/
+}
+.hnscBodyContentsST .dateTxt{
+    /*font-size: 15px;*/
+    margin-bottom: 55px;
+}
+.hnscBodyContentsST .subject{
+ 	/*font-size: 14px;*/
+ 	padding-top: 1px;
+ 	padding-bottom: 1px;
+}
+.hnscBodyContentsST .bold{
+	font-weight: 700;
+}
+.hnscBodyContentsST p{
+	text-align: justify;
+}
+.hnscBodyContentsST div{
+	margin-bottom: 25px;
+}
+.hnscBodyContentsST table {
+    border-collapse: collapse;
+}
+.hnscBodyContentsST th, .hnscBodyContentsST td{
+	border: 1px solid #207da8;
+	text-align: center;
+}
+.hnscBodyContentsST th{
+	/*font-size: 18px;*/
+}
+.hnscBodyContentsST .tHeadingRow{
+	background: #207da8;
+	color: #ffffff;
+}
+.hnscBodyContentsST table td p{
+	text-align: justify;
+	margin-top: -15px;
+}
+table td .tbold{
+	font-weight: 600;
+}
+/*Css for 'Manager Letter Standard Template' ends here*/
+
+/*Css for 'Manager Letter Standard Template with Percentage' starts here*/
+/*Css for 'Manager Letter Standard Template with Percentage' ends here*/
+</style>
+	</head>
+	<body  lang=EN-US style='tab-interval:.5in'>
+        <div class=Section1>
+		<div class="wrapper">
+			<div class="hnscHeader" style="float: right;margin-left:470px;">
+				<div>
+				 <img src="https://www.cognizant.com/content/dam/Cognizant_Dotcom/images/cognizant-logo.png"  style="margin-right: 10px;" />
+				</div>
+			<!--	<div class="logo">
+					{Logo}
+				</div>-->
+				<div class="headAddress" style="float: right;line-height: 4px;font-weight: 600; font-size:13px;">
+					<p>211 Quality Circle <br />
+                       College Station, TX  77845<br />
+					    Phone +1 (979) 691-7700<br />
+					Fax +1 (979) 691-7750<br />
+					www.cognizant.com</p>
+				</div>
+			</div>
+			<div class="removeFloatRyt">
+			</div>
+			<div class="hnscBodyContentsST">
+				<div>
+					<p class="dateTxt">February 15 , 2018</p>
+					<div class="addresseeTxt">
+						<div style="margin-top:10px;">U.S. Department of Homeland Security<br />
+						United States Citizenship and Immigration Services</div>
+					</div>
+				</div>
+				<div class="subject">
+					<p><span class="bold">Re:</span> <span class="bold"></span>Mr. Rajiv Chaudhuri<span class="bold"></span> </p>
+				</div>
+				<div class="salutationDiv">
+					<p>Dear Officer:</p>
+				</div>
+				<div class="lineHt">
+					<p>I offer this letter to detail in-depth the conditions of the direct employment of Mr. Rajiv Chaudhuri by Cognizant Technology Solutions U.S. Corporation ("Cognizant"), which has filed an H-1B petition with the U.S. Citizenship and Immigration Services ("USCIS") on his behalf.</p>
+				</div>
+				<div class="lineHt">
+					<p>When Cognizant employees, such as Mr. Rajiv Chaudhuri, are placed at a Cognizant client's worksite, the Client is not in any way their employer.  At all times, Cognizant remains the sole and direct employer, and has control over the work of our employees.  It is Cognizant that selects which of its employees will conduct work activities at a Client's worksite, determines what activities those employees will perform, and directly supervises and controls the work of those employees.  At all times, Cognizant is responsible for paying salaries, benefits, and expenses for those employees, and the Client does not employ those individuals nor does the Client in any way function as their employer.</p>
+				</div>
+				<div class="lineHt">
+					<p>As well, the Performance Management Process at Cognizant is a structured formal interaction between an employee and his manager.  This process includes evaluating performance against set objectives and competencies applicable for that role, providing performance feedback, identifying development needs and setting goals for the future.   The on-going performance communication takes place between the employee and that employee's manager, which results in a performance rating for the employee. Mr. Rajiv Chaudhuri will be evaluated by me, his Cognizant managers. The objective of this Performance Management Process is to fuel the success of Cognizant and its employees.</p>
+				</div>
+				<div class="lineHt">
+					<p>Cognizant is among the 80% of U.S. businesses that permits employees to work remotely, e.g., from an employee's home and/ or a client worksite.  Throughout Cognizant maintains its employer-employee relationship with all Cognizant employees, including those who may work remotely, through the managerial control that Cognizant generally exerts over its employees.  Such Cognizant supervisory control over employees encompass many levels, including hire/ fire, assignment deployment/ re-deployment, productivity, desired outcomes, and actual processes and tools.  As well, Cognizant assumes all responsibilities of an employer, including the payment of wages, the withholding of payroll taxes, the payment of federal and state taxes for unemployment, and other similar legal requirements.  In the course of controlling the work activities of employees, Cognizant managers use a multitude of communication media and tools, including reporting and meetings, in person or through technology, such as video conferencing, desktop video, VoIP, mobile phones, and instant messaging, as well as through Cognizant systems and tools.  As Mr. Rajiv Chaudhuri's direct Cognizant manager, I oversee, assign, control and review his work on a regular basis both in-person and with the alternate means of communication noted above.</p>
+				</div>
+				<div class="lineHt">
+					<p>Mr. Rajiv Chaudhuri will perform his duties on a full-time, 40 hour per week basis, under my direct and close supervision over his day-to-day work activities. I will have direct control over his day-to-day specialty occupation work duties, I will assign and review his work product, and I will appraise his work performance.  To be clear, Mr. Rajiv Chaudhuri's will perform his duties as an individual contributor under my direct and close supervision. The role held by Mr. Rajiv Chaudhuri's at Cognizant requires minimal experience in the software industry and at minimum a Bachelor's degree in a field of study related to computer systems. The minimum requirements are normal for the occupation within the industry in the United States, bear a reasonable relationship to the occupation in the context of our leadership position in the IT software development and consulting industry, and are essential to perform the job in a reasonable manner. Cognizant's key differentiators are our domain knowledge wherein we continuously drive towards increasingly deeper domain knowledge in conjunction with our organization of focus and changing business models.   Cognizant's uniquely integrated services and industry domain-aligned go-to-market methodology has enabled us to consistently grow our business and build a competitive advantage in the continuously evolving and highly competitive IT industry. Thus, to continue to maintain our competitive advantage in the marketplace, the complexities of the job duties could not be properly performed by an individual who does not possess the professional background specified above.</p>
+				</div>
+				<div>
+					<p>
+					  Mr. Rajiv Chaudhuri will perform the following work activities:
+					</p>
+				</div>
+                <div>
+					<table CELLPADDING=25>
+						<tr>
+							<th>Ref.</th>
+							<th>Description of Job Duty</th>
+							<th>Percent</th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td style="text-align:left;"><span class="tbold"></span> <span style="background:yellow;">THIS TABLE HAS SAMPLE CONTENT TO SHOW THE DETAILED LEVEL REQUIRED, PLEASE DELETE WITH ACTUAL WORK ACTIVITES AND PERCENTAGE OF TIME.</span><br /><span class="">Perform testing based on established best practice methods of Cognizant's projest test strategy documents (a defined IT strategy approach to the creation of the customized software solutions requiring the application of advanced and complex IT theories and methods). The testing will be conducted with specific Cognizant technology and, such as Cognizant ADPART (Activity Diagram-Based Path Analysis and Regression Testing) which is a visual modeling tool. It replaces the maze of written documents often used to document important business processes with activity diagrams through which users can easily capture each process flow. ADPART translates the requirements into a flow chart and automatically generates test cases.</span></td>
+							<td><span style="background:yellow;">20%</span></td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td style="text-align:left;"><span>Follow proven business work flow, created by Cognizant's project lead/ manager, of end to end high level scenarios, which involves a description of technical and business specifications and what methodology to use to achieve the Cognizant customized software solution under various scenarios.</span></td>
+							<td><span style="background:yellow;">20%</span></td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td style="text-align:left;"><span>Participate in business requirements and functional requirements gathering, which involves a review of existing systems configurations and operating methodologies as well as understanding evolving business needs.</span></td>
+							<td><span style="background:yellow;">20%</span></td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td style="text-align:left;"><span>Provide support for business and functional acceptance testing which involves ensuring technical specifications meet business requirements, which includes coordinating with Cognizant's offshore team of developers and onshore centers of excellence to ensure best-practice standards are implemented.  This duty involves Cognizant's CTDM (Test Data Management Architecture) which facilitates test data generation through automation and simplifies data uploading and reporting. The architecture encourages the reusability of test data for testing in distributed environments and improves project manageability by mitigating confusion caused due to the creation of different test data in multiple environments.</span></td>
+							<td><span style="background:yellow;">20%</span></td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td style="text-align:left;"><span>Attend Cognizant project team meetings to learn about change requests and/ or modifications to customized software solutions.</span></td>
+							<td><span style="background:yellow;">20%</span></td>
+						</tr>
+					</table>
+				</div>
+				<div class="lineHt">
+					<p>The below organization chart is specific to the assignment which Mr. Rajiv Chaudhuri has been selected for in the U.S. within our <span style="background:yellow;">insert name</span> business unit:</p>
+				</div>
+                <div>
+                    <p style="color:red;">[Please remove these instruction before signing the letter. Use the editable org chart provided in the manager letter section. Insert the updated org chart in full format within the margins and the body of the letter same as shown below].</p>
+                </div>
+				<div>
+                   <!--  <a href="\\CTSINTBMSIMSD2\SanShare\1C_Apps_Test\RFEApp\H Letter\Org Chart - M and above.docx">Org Chart Link</a>-->
+				 <img style="width:100%;" src="https://onecognizantapps.cognizant.com/2413/Images/Manager_Letter_A.PNG" style="margin-right: 10px;" />
+				</div>
+				<div class="lineHt">
+					<p>Cognizant's practice of entering into  MSAs, and other contractual agreements that are under the governance of the relevant MSA, is premised on a host of business and legal concepts.  These considerations serve as the underlying basis for a validity period of the agreement, which may not be representative of the full length or duration of our client relationship and Cognizant's provision of services.  Indeed, most of our short term agreements entered into under the governing MSA are renewed subsequent to negotiations between each client and Cognizant, either prior to or after the expiration of the existing agreement.  One consideration for Cognizant limiting the validity of a customer agreement is risk of payment default, specifically bankruptcy where a court could require that Cognizant continue to provide services if our agreement is in effect on the date of the bankruptcy petition filing. Another example involves a warranty that begins only once the specified phase of the work is completed whereas a longer duration agreement would essentially extend the warranty to the interim services which is not commercially reasonable for Cognizant. In this instance, the validity period of the Statement of Work (SOW), or equivalent short term agreement between Cognizant and <span style="background:yellow;">{Insert Client Name}</span>, or equivalent alternate contractual agreement, is not definitive of the extent and duration of Cognizant's customer engagements.</p>
+				</div>
+				<div class="lineHt">
+					<p>Please feel free to contact me for additional information.  Thank you.<p>
+				</div>
+				<div>
+					<p>Sincerely,</p>
+				</div>
+				<div>
+					<p>(Signature)</p>
+				</div>
+				<div class="addresserTxt">
+					<p> Pradeep VIJAYAN</p>
+					<p>Architect - Technology</p>
+					<p>Telephone Number</p>
+				</div>
+			</div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+	          <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+	          <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <div style="font-size:24px;">
+                <div>*******Please do not include this page********</div>
+<div style="color:red;"> <u>Dear Manager, Kindly ensure following points are taken care prior to finalizing the manager letter.</u> <br />
+
+1.	Associate name should be mention as per passport <br />
+2.	Logo should be placed at right corner of the letter<br />
+3.	Onsite manager has to sign the manager letter<br />
+4.	At the signatory portion, mention name, designation, direct dial of the signatory person<br />
+5.	Please create and insert the org chart with the attached editable org chart link. Insert the org chart in full format within the margins and the body of the letter same as shown below. <br />
+6.  In page 2, instructions should be removed <br />
+    <br />
+For e.g. <br /> <br />
+   - Detailed description of Duty 1.  <br />
+   - [INSERT 4-5 BULLET POINT LIST OF JOB DUTIES-NO REFERENCE TO CLIENT- TOTAL % ACROSS EACH JOB DUTIES SHOULD SUM TO 100%. MINIMUM 3 JOB DUTIES ARE REQUIRED IN THE TABLE PLEASE REMOVE THESE INSTRUCTIONS AND BRACKETS]<br />
+7.	In page 3, Please remove these instruction before signing the letter. Use the editable org chart provided in the manager letter section. Insert the updated org chart in full format within the margins and the body of the letter same as shown above.
+</div>
+            </div>
+		</div>
+           </div>
+
+
+     <!--   change for header-->
+
+         <table id='hrdftrtbl' border='0' cellspacing='0' cellpadding='0'>
+    <!--<tr><td>-->
+
+    <div style='mso-element:header' id=h1 >
+
+           <p style="font-size:13px;font-weight:bold">Re: Mr. Rajiv Chaudhuri   <br/>
+
+               Page No:<span style='mso-tab-count: 0;'></span>
+                <span style='mso-field-code: PAGE'><span style='mso-no-proof: yes'></span> <span style='mso-field-code: NUMPAGES'></span>    
+                            </span>
+         
+
+           </p>
+    </div>
+          
+   <!-- </td>
+    <td>
+    <div style='mso-element:footer' id=f1>
+         <span style='position: relative; z-index: -1'></span>
+      
+       </div>   
+    <div style='mso-element:header' id=fh1>
+
+    <p class=MsoHeader><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+    </div>
+
+    <div style='mso-element:footer' id=ff1>
+
+    <p class=MsoFooter><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+    </div>
+
+    </td></tr>-->
+    </table>
+	</body>
+</html>
+
+
