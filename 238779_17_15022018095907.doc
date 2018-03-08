@@ -23,10 +23,10 @@ w\:* {behavior:url(#default#VML);}
  <o:DocumentProperties>
   <o:Author>Rajiv Chaudhuri</o:Author>
   <o:LastAuthor>Rajiv Chaudhuri</o:LastAuthor>
-  <o:Revision>47</o:Revision>
-  <o:TotalTime>75</o:TotalTime>
+  <o:Revision>48</o:Revision>
+  <o:TotalTime>77</o:TotalTime>
   <o:Created>2018-02-16T04:47:00Z</o:Created>
-  <o:LastSaved>2018-02-16T06:04:00Z</o:LastSaved>
+  <o:LastSaved>2018-02-16T06:10:00Z</o:LastSaved>
   <o:Pages>4</o:Pages>
   <o:Words>1369</o:Words>
   <o:Characters>7809</o:Characters>
@@ -61,6 +61,7 @@ href="238779_17_15022018095907_files/colorschememapping.xml">
    <w:BreakWrappedTables/>
    <w:SplitPgBreakAndParaMark/>
   </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
   <m:mathPr>
    <m:mathFont m:val="Cambria Math"/>
    <m:brkBin m:val="before"/>
@@ -662,13 +663,6 @@ href="238779_17_15022018095907_files/colorschememapping.xml">
 
  /* Font Definitions */
  @font-face
-	{font-family:Wingdings;
-	panose-1:5 0 0 0 0 0 0 0 0 0;
-	mso-font-charset:2;
-	mso-generic-font-family:auto;
-	mso-font-pitch:variable;
-	mso-font-signature:0 268435456 0 0 -2147483648 0;}
-@font-face
 	{font-family:"Cambria Math";
 	panose-1:2 4 5 3 5 4 6 3 2 4;
 	mso-font-charset:0;
@@ -700,7 +694,8 @@ p.MsoHeader, li.MsoHeader, div.MsoHeader
 	mso-fareast-font-family:"Times New Roman";
 	mso-fareast-theme-font:minor-fareast;}
 p.MsoFooter, li.MsoFooter, div.MsoFooter
-	{mso-style-priority:99;
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
 	mso-style-link:"Footer Char";
 	margin:0in;
 	margin-bottom:.0001pt;
@@ -723,7 +718,8 @@ p
 	mso-fareast-font-family:"Times New Roman";
 	mso-fareast-theme-font:minor-fareast;}
 p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
-	{mso-style-priority:1;
+	{mso-style-noshow:yes;
+	mso-style-priority:1;
 	mso-style-unhide:no;
 	mso-style-qformat:yes;
 	mso-style-parent:"";
@@ -736,6 +732,8 @@ p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
 	mso-fareast-theme-font:minor-fareast;}
 p.msonormal0, li.msonormal0, div.msonormal0
 	{mso-style-name:msonormal;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
 	mso-style-unhide:no;
 	mso-margin-top-alt:auto;
 	margin-right:0in;
@@ -743,17 +741,6 @@ p.msonormal0, li.msonormal0, div.msonormal0
 	margin-left:0in;
 	mso-pagination:widow-orphan;
 	font-size:12.0pt;
-	font-family:"Times New Roman",serif;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:minor-fareast;}
-span.FooterChar
-	{mso-style-name:"Footer Char";
-	mso-style-priority:99;
-	mso-style-unhide:no;
-	mso-style-locked:yes;
-	mso-style-link:Footer;
-	mso-ansi-font-size:12.0pt;
-	mso-bidi-font-size:12.0pt;
 	font-family:"Times New Roman",serif;
 	mso-fareast-font-family:"Times New Roman";
 	mso-fareast-theme-font:minor-fareast;}
@@ -766,10 +753,30 @@ span.HeaderChar
 	mso-ansi-font-size:12.0pt;
 	mso-bidi-font-size:12.0pt;
 	font-family:"Times New Roman",serif;
+	mso-ascii-font-family:"Times New Roman";
 	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:minor-fareast;}
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Footer;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-ascii-font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
 p.smlsize, li.smlsize, div.smlsize
 	{mso-style-name:smlsize;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
 	mso-style-unhide:no;
 	mso-margin-top-alt:auto;
 	margin-right:0in;
@@ -782,6 +789,8 @@ p.smlsize, li.smlsize, div.smlsize
 	mso-fareast-theme-font:minor-fareast;}
 p.wrapperclientletter, li.wrapperclientletter, div.wrapperclientletter
 	{mso-style-name:wrapperclientletter;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
 	mso-style-unhide:no;
 	margin:0in;
 	margin-bottom:.0001pt;
@@ -792,6 +801,8 @@ p.wrapperclientletter, li.wrapperclientletter, div.wrapperclientletter
 	mso-fareast-theme-font:minor-fareast;}
 p.wrapper, li.wrapper, div.wrapper
 	{mso-style-name:wrapper;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
 	mso-style-unhide:no;
 	margin:0in;
 	margin-bottom:.0001pt;
@@ -802,6 +813,8 @@ p.wrapper, li.wrapper, div.wrapper
 	mso-fareast-theme-font:minor-fareast;}
 p.letterheader, li.letterheader, div.letterheader
 	{mso-style-name:letterheader;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
 	mso-style-unhide:no;
 	mso-margin-top-alt:auto;
 	margin-right:0in;
@@ -815,6 +828,8 @@ p.letterheader, li.letterheader, div.letterheader
 	mso-fareast-theme-font:minor-fareast;}
 p.letterfotter, li.letterfotter, div.letterfotter
 	{mso-style-name:letterfotter;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
 	mso-style-unhide:no;
 	mso-margin-top-alt:auto;
 	margin-right:0in;
@@ -827,6 +842,8 @@ p.letterfotter, li.letterfotter, div.letterfotter
 	mso-fareast-theme-font:minor-fareast;}
 p.headaddress, li.headaddress, div.headaddress
 	{mso-style-name:headaddress;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
 	mso-style-unhide:no;
 	mso-margin-top-alt:auto;
 	margin-right:0in;
@@ -841,6 +858,8 @@ p.headaddress, li.headaddress, div.headaddress
 	font-weight:bold;}
 p.removefloatryt, li.removefloatryt, div.removefloatryt
 	{mso-style-name:removefloatryt;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
 	mso-style-unhide:no;
 	mso-margin-top-alt:auto;
 	margin-right:0in;
@@ -853,6 +872,8 @@ p.removefloatryt, li.removefloatryt, div.removefloatryt
 	mso-fareast-theme-font:minor-fareast;}
 p.hnscbodycontents, li.hnscbodycontents, div.hnscbodycontents
 	{mso-style-name:hnscbodycontents;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
 	mso-style-unhide:no;
 	mso-margin-top-alt:auto;
 	margin-right:0in;
@@ -865,6 +886,8 @@ p.hnscbodycontents, li.hnscbodycontents, div.hnscbodycontents
 	mso-fareast-theme-font:minor-fareast;}
 p.addresseetxt, li.addresseetxt, div.addresseetxt
 	{mso-style-name:addresseetxt;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
 	mso-style-unhide:no;
 	mso-margin-top-alt:auto;
 	margin-right:0in;
@@ -878,6 +901,8 @@ p.addresseetxt, li.addresseetxt, div.addresseetxt
 	mso-fareast-theme-font:minor-fareast;}
 p.addressertxt, li.addressertxt, div.addressertxt
 	{mso-style-name:addressertxt;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
 	mso-style-unhide:no;
 	margin-top:21.0pt;
 	margin-right:0in;
@@ -891,6 +916,8 @@ p.addressertxt, li.addressertxt, div.addressertxt
 	mso-fareast-theme-font:minor-fareast;}
 p.benefitslist, li.benefitslist, div.benefitslist
 	{mso-style-name:benefitslist;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
 	mso-style-unhide:no;
 	mso-margin-top-alt:auto;
 	margin-right:0in;
@@ -904,6 +931,8 @@ p.benefitslist, li.benefitslist, div.benefitslist
 	mso-fareast-theme-font:minor-fareast;}
 p.lineht, li.lineht, div.lineht
 	{mso-style-name:lineht;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
 	mso-style-unhide:no;
 	mso-margin-top-alt:auto;
 	margin-right:0in;
@@ -917,6 +946,8 @@ p.lineht, li.lineht, div.lineht
 	mso-fareast-theme-font:minor-fareast;}
 p.tbold, li.tbold, div.tbold
 	{mso-style-name:tbold;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
 	mso-style-unhide:no;
 	mso-margin-top-alt:auto;
 	margin-right:0in;
@@ -929,6 +960,8 @@ p.tbold, li.tbold, div.tbold
 	mso-fareast-theme-font:minor-fareast;}
 p.datediv, li.datediv, div.datediv
 	{mso-style-name:datediv;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
 	mso-style-unhide:no;
 	mso-margin-top-alt:auto;
 	margin-right:0in;
@@ -941,6 +974,8 @@ p.datediv, li.datediv, div.datediv
 	mso-fareast-theme-font:minor-fareast;}
 p.addresseename, li.addresseename, div.addresseename
 	{mso-style-name:addresseename;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
 	mso-style-unhide:no;
 	mso-margin-top-alt:auto;
 	margin-right:0in;
@@ -953,6 +988,8 @@ p.addresseename, li.addresseename, div.addresseename
 	mso-fareast-theme-font:minor-fareast;}
 p.datetxt, li.datetxt, div.datetxt
 	{mso-style-name:datetxt;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
 	mso-style-unhide:no;
 	mso-margin-top-alt:auto;
 	margin-right:0in;
@@ -965,6 +1002,8 @@ p.datetxt, li.datetxt, div.datetxt
 	mso-fareast-theme-font:minor-fareast;}
 p.subject, li.subject, div.subject
 	{mso-style-name:subject;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
 	mso-style-unhide:no;
 	mso-margin-top-alt:auto;
 	margin-right:0in;
@@ -977,6 +1016,8 @@ p.subject, li.subject, div.subject
 	mso-fareast-theme-font:minor-fareast;}
 p.bold, li.bold, div.bold
 	{mso-style-name:bold;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
 	mso-style-unhide:no;
 	mso-margin-top-alt:auto;
 	margin-right:0in;
@@ -989,6 +1030,8 @@ p.bold, li.bold, div.bold
 	mso-fareast-theme-font:minor-fareast;}
 p.theadingrow, li.theadingrow, div.theadingrow
 	{mso-style-name:theadingrow;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
 	mso-style-unhide:no;
 	mso-margin-top-alt:auto;
 	margin-right:0in;
@@ -1001,6 +1044,8 @@ p.theadingrow, li.theadingrow, div.theadingrow
 	mso-fareast-theme-font:minor-fareast;}
 p.datediv1, li.datediv1, div.datediv1
 	{mso-style-name:datediv1;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
 	mso-style-unhide:no;
 	margin-top:18.75pt;
 	margin-right:0in;
@@ -1013,6 +1058,8 @@ p.datediv1, li.datediv1, div.datediv1
 	mso-fareast-theme-font:minor-fareast;}
 p.addresseename1, li.addresseename1, div.addresseename1
 	{mso-style-name:addresseename1;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
 	mso-style-unhide:no;
 	mso-margin-top-alt:auto;
 	margin-right:0in;
@@ -1026,6 +1073,8 @@ p.addresseename1, li.addresseename1, div.addresseename1
 	mso-fareast-theme-font:minor-fareast;}
 p.smlsize1, li.smlsize1, div.smlsize1
 	{mso-style-name:smlsize1;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
 	mso-style-unhide:no;
 	mso-margin-top-alt:auto;
 	margin-right:0in;
@@ -1039,6 +1088,8 @@ p.smlsize1, li.smlsize1, div.smlsize1
 	mso-fareast-theme-font:minor-fareast;}
 p.datetxt1, li.datetxt1, div.datetxt1
 	{mso-style-name:datetxt1;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
 	mso-style-unhide:no;
 	mso-margin-top-alt:auto;
 	margin-right:0in;
@@ -1053,6 +1104,8 @@ p.datetxt1, li.datetxt1, div.datetxt1
 	font-weight:bold;}
 p.subject1, li.subject1, div.subject1
 	{mso-style-name:subject1;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
 	mso-style-unhide:no;
 	mso-margin-top-alt:auto;
 	margin-right:0in;
@@ -1067,6 +1120,8 @@ p.subject1, li.subject1, div.subject1
 	font-weight:bold;}
 p.bold1, li.bold1, div.bold1
 	{mso-style-name:bold1;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
 	mso-style-unhide:no;
 	mso-margin-top-alt:auto;
 	margin-right:0in;
@@ -1081,6 +1136,8 @@ p.bold1, li.bold1, div.bold1
 	font-weight:bold;}
 p.tbold1, li.tbold1, div.tbold1
 	{mso-style-name:tbold1;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
 	mso-style-unhide:no;
 	mso-margin-top-alt:auto;
 	margin-right:0in;
@@ -1107,6 +1164,8 @@ p.datetxt2, li.datetxt2, div.datetxt2
 	mso-fareast-theme-font:minor-fareast;}
 p.subject2, li.subject2, div.subject2
 	{mso-style-name:subject2;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
 	mso-style-unhide:no;
 	mso-margin-top-alt:auto;
 	margin-right:0in;
@@ -1120,6 +1179,8 @@ p.subject2, li.subject2, div.subject2
 	mso-fareast-theme-font:minor-fareast;}
 p.bold2, li.bold2, div.bold2
 	{mso-style-name:bold2;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
 	mso-style-unhide:no;
 	mso-margin-top-alt:auto;
 	margin-right:0in;
@@ -1134,6 +1195,8 @@ p.bold2, li.bold2, div.bold2
 	font-weight:bold;}
 p.theadingrow1, li.theadingrow1, div.theadingrow1
 	{mso-style-name:theadingrow1;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
 	mso-style-unhide:no;
 	mso-margin-top-alt:auto;
 	margin-right:0in;
@@ -1176,315 +1239,6 @@ span.GramE
 	mso-paper-source:0;}
 div.WordSection1
 	{page:WordSection1;}
- /* List Definitions */
- @list l0
-	{mso-list-id:296112824;
-	mso-list-template-ids:1212325478;}
-@list l0:level1
-	{mso-level-number-format:bullet;
-	mso-level-text:\F0B7;
-	mso-level-tab-stop:.5in;
-	mso-level-number-position:left;
-	text-indent:-.25in;
-	mso-ansi-font-size:10.0pt;
-	font-family:Symbol;}
-@list l0:level2
-	{mso-level-number-format:bullet;
-	mso-level-text:o;
-	mso-level-tab-stop:1.0in;
-	mso-level-number-position:left;
-	text-indent:-.25in;
-	mso-ansi-font-size:10.0pt;
-	font-family:"Courier New";
-	mso-bidi-font-family:"Times New Roman";}
-@list l0:level3
-	{mso-level-number-format:bullet;
-	mso-level-text:\F0A7;
-	mso-level-tab-stop:1.5in;
-	mso-level-number-position:left;
-	text-indent:-.25in;
-	mso-ansi-font-size:10.0pt;
-	font-family:Wingdings;}
-@list l0:level4
-	{mso-level-number-format:bullet;
-	mso-level-text:\F0A7;
-	mso-level-tab-stop:2.0in;
-	mso-level-number-position:left;
-	text-indent:-.25in;
-	mso-ansi-font-size:10.0pt;
-	font-family:Wingdings;}
-@list l0:level5
-	{mso-level-number-format:bullet;
-	mso-level-text:\F0A7;
-	mso-level-tab-stop:2.5in;
-	mso-level-number-position:left;
-	text-indent:-.25in;
-	mso-ansi-font-size:10.0pt;
-	font-family:Wingdings;}
-@list l0:level6
-	{mso-level-number-format:bullet;
-	mso-level-text:\F0A7;
-	mso-level-tab-stop:3.0in;
-	mso-level-number-position:left;
-	text-indent:-.25in;
-	mso-ansi-font-size:10.0pt;
-	font-family:Wingdings;}
-@list l0:level7
-	{mso-level-number-format:bullet;
-	mso-level-text:\F0A7;
-	mso-level-tab-stop:3.5in;
-	mso-level-number-position:left;
-	text-indent:-.25in;
-	mso-ansi-font-size:10.0pt;
-	font-family:Wingdings;}
-@list l0:level8
-	{mso-level-number-format:bullet;
-	mso-level-text:\F0A7;
-	mso-level-tab-stop:4.0in;
-	mso-level-number-position:left;
-	text-indent:-.25in;
-	mso-ansi-font-size:10.0pt;
-	font-family:Wingdings;}
-@list l0:level9
-	{mso-level-number-format:bullet;
-	mso-level-text:\F0A7;
-	mso-level-tab-stop:4.5in;
-	mso-level-number-position:left;
-	text-indent:-.25in;
-	mso-ansi-font-size:10.0pt;
-	font-family:Wingdings;}
-@list l1
-	{mso-list-id:367411351;
-	mso-list-template-ids:1257794340;}
-@list l1:level1
-	{mso-level-number-format:bullet;
-	mso-level-text:\F0B7;
-	mso-level-tab-stop:.5in;
-	mso-level-number-position:left;
-	text-indent:-.25in;
-	mso-ansi-font-size:10.0pt;
-	font-family:Symbol;}
-@list l1:level2
-	{mso-level-number-format:bullet;
-	mso-level-text:o;
-	mso-level-tab-stop:1.0in;
-	mso-level-number-position:left;
-	text-indent:-.25in;
-	mso-ansi-font-size:10.0pt;
-	font-family:"Courier New";
-	mso-bidi-font-family:"Times New Roman";}
-@list l1:level3
-	{mso-level-number-format:bullet;
-	mso-level-text:\F0A7;
-	mso-level-tab-stop:1.5in;
-	mso-level-number-position:left;
-	text-indent:-.25in;
-	mso-ansi-font-size:10.0pt;
-	font-family:Wingdings;}
-@list l1:level4
-	{mso-level-number-format:bullet;
-	mso-level-text:\F0A7;
-	mso-level-tab-stop:2.0in;
-	mso-level-number-position:left;
-	text-indent:-.25in;
-	mso-ansi-font-size:10.0pt;
-	font-family:Wingdings;}
-@list l1:level5
-	{mso-level-number-format:bullet;
-	mso-level-text:\F0A7;
-	mso-level-tab-stop:2.5in;
-	mso-level-number-position:left;
-	text-indent:-.25in;
-	mso-ansi-font-size:10.0pt;
-	font-family:Wingdings;}
-@list l1:level6
-	{mso-level-number-format:bullet;
-	mso-level-text:\F0A7;
-	mso-level-tab-stop:3.0in;
-	mso-level-number-position:left;
-	text-indent:-.25in;
-	mso-ansi-font-size:10.0pt;
-	font-family:Wingdings;}
-@list l1:level7
-	{mso-level-number-format:bullet;
-	mso-level-text:\F0A7;
-	mso-level-tab-stop:3.5in;
-	mso-level-number-position:left;
-	text-indent:-.25in;
-	mso-ansi-font-size:10.0pt;
-	font-family:Wingdings;}
-@list l1:level8
-	{mso-level-number-format:bullet;
-	mso-level-text:\F0A7;
-	mso-level-tab-stop:4.0in;
-	mso-level-number-position:left;
-	text-indent:-.25in;
-	mso-ansi-font-size:10.0pt;
-	font-family:Wingdings;}
-@list l1:level9
-	{mso-level-number-format:bullet;
-	mso-level-text:\F0A7;
-	mso-level-tab-stop:4.5in;
-	mso-level-number-position:left;
-	text-indent:-.25in;
-	mso-ansi-font-size:10.0pt;
-	font-family:Wingdings;}
-@list l2
-	{mso-list-id:1094473211;
-	mso-list-template-ids:1790870118;}
-@list l2:level1
-	{mso-level-number-format:bullet;
-	mso-level-text:\F0B7;
-	mso-level-tab-stop:.5in;
-	mso-level-number-position:left;
-	text-indent:-.25in;
-	mso-ansi-font-size:10.0pt;
-	font-family:Symbol;}
-@list l2:level2
-	{mso-level-number-format:bullet;
-	mso-level-text:o;
-	mso-level-tab-stop:1.0in;
-	mso-level-number-position:left;
-	text-indent:-.25in;
-	mso-ansi-font-size:10.0pt;
-	font-family:"Courier New";
-	mso-bidi-font-family:"Times New Roman";}
-@list l2:level3
-	{mso-level-number-format:bullet;
-	mso-level-text:\F0A7;
-	mso-level-tab-stop:1.5in;
-	mso-level-number-position:left;
-	text-indent:-.25in;
-	mso-ansi-font-size:10.0pt;
-	font-family:Wingdings;}
-@list l2:level4
-	{mso-level-number-format:bullet;
-	mso-level-text:\F0A7;
-	mso-level-tab-stop:2.0in;
-	mso-level-number-position:left;
-	text-indent:-.25in;
-	mso-ansi-font-size:10.0pt;
-	font-family:Wingdings;}
-@list l2:level5
-	{mso-level-number-format:bullet;
-	mso-level-text:\F0A7;
-	mso-level-tab-stop:2.5in;
-	mso-level-number-position:left;
-	text-indent:-.25in;
-	mso-ansi-font-size:10.0pt;
-	font-family:Wingdings;}
-@list l2:level6
-	{mso-level-number-format:bullet;
-	mso-level-text:\F0A7;
-	mso-level-tab-stop:3.0in;
-	mso-level-number-position:left;
-	text-indent:-.25in;
-	mso-ansi-font-size:10.0pt;
-	font-family:Wingdings;}
-@list l2:level7
-	{mso-level-number-format:bullet;
-	mso-level-text:\F0A7;
-	mso-level-tab-stop:3.5in;
-	mso-level-number-position:left;
-	text-indent:-.25in;
-	mso-ansi-font-size:10.0pt;
-	font-family:Wingdings;}
-@list l2:level8
-	{mso-level-number-format:bullet;
-	mso-level-text:\F0A7;
-	mso-level-tab-stop:4.0in;
-	mso-level-number-position:left;
-	text-indent:-.25in;
-	mso-ansi-font-size:10.0pt;
-	font-family:Wingdings;}
-@list l2:level9
-	{mso-level-number-format:bullet;
-	mso-level-text:\F0A7;
-	mso-level-tab-stop:4.5in;
-	mso-level-number-position:left;
-	text-indent:-.25in;
-	mso-ansi-font-size:10.0pt;
-	font-family:Wingdings;}
-@list l3
-	{mso-list-id:1192499178;
-	mso-list-template-ids:728270986;}
-@list l3:level1
-	{mso-level-number-format:bullet;
-	mso-level-text:\F0B7;
-	mso-level-tab-stop:.5in;
-	mso-level-number-position:left;
-	text-indent:-.25in;
-	mso-ansi-font-size:10.0pt;
-	font-family:Symbol;}
-@list l3:level2
-	{mso-level-number-format:bullet;
-	mso-level-text:o;
-	mso-level-tab-stop:1.0in;
-	mso-level-number-position:left;
-	text-indent:-.25in;
-	mso-ansi-font-size:10.0pt;
-	font-family:"Courier New";
-	mso-bidi-font-family:"Times New Roman";}
-@list l3:level3
-	{mso-level-number-format:bullet;
-	mso-level-text:\F0A7;
-	mso-level-tab-stop:1.5in;
-	mso-level-number-position:left;
-	text-indent:-.25in;
-	mso-ansi-font-size:10.0pt;
-	font-family:Wingdings;}
-@list l3:level4
-	{mso-level-number-format:bullet;
-	mso-level-text:\F0A7;
-	mso-level-tab-stop:2.0in;
-	mso-level-number-position:left;
-	text-indent:-.25in;
-	mso-ansi-font-size:10.0pt;
-	font-family:Wingdings;}
-@list l3:level5
-	{mso-level-number-format:bullet;
-	mso-level-text:\F0A7;
-	mso-level-tab-stop:2.5in;
-	mso-level-number-position:left;
-	text-indent:-.25in;
-	mso-ansi-font-size:10.0pt;
-	font-family:Wingdings;}
-@list l3:level6
-	{mso-level-number-format:bullet;
-	mso-level-text:\F0A7;
-	mso-level-tab-stop:3.0in;
-	mso-level-number-position:left;
-	text-indent:-.25in;
-	mso-ansi-font-size:10.0pt;
-	font-family:Wingdings;}
-@list l3:level7
-	{mso-level-number-format:bullet;
-	mso-level-text:\F0A7;
-	mso-level-tab-stop:3.5in;
-	mso-level-number-position:left;
-	text-indent:-.25in;
-	mso-ansi-font-size:10.0pt;
-	font-family:Wingdings;}
-@list l3:level8
-	{mso-level-number-format:bullet;
-	mso-level-text:\F0A7;
-	mso-level-tab-stop:4.0in;
-	mso-level-number-position:left;
-	text-indent:-.25in;
-	mso-ansi-font-size:10.0pt;
-	font-family:Wingdings;}
-@list l3:level9
-	{mso-level-number-format:bullet;
-	mso-level-text:\F0A7;
-	mso-level-tab-stop:4.5in;
-	mso-level-number-position:left;
-	text-indent:-.25in;
-	mso-ansi-font-size:10.0pt;
-	font-family:Wingdings;}
-ol
-	{margin-bottom:0in;}
-ul
-	{margin-bottom:0in;}
 -->
 </style>
 <!--[if gte mso 10]>
@@ -1518,53 +1272,31 @@ ul
 
 <div class=WordSection1>
 
-<p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
-mso-no-proof:yes'><img width=175 height=53 id="_x0000_i1027"
+<p class=MsoNormal style='margin-left:4.5in;text-indent:.5in'><span
+style='mso-fareast-font-family:"Times New Roman";mso-no-proof:yes'><img
+width=175 height=53 id="_x0000_i1027"
 src="https://www.cognizant.com/content/dam/Cognizant_Dotcom/images/cognizant-logo.png"
 alt="https://www.cognizant.com/content/dam/Cognizant_Dotcom/images/cognizant-logo.png"></span><span
 style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
 
-<!--	<div class="logo">
+<p style='margin-left:5.0in;mso-line-height-alt:3.0pt'><b><span
+style='font-size:10.0pt'><!--	<div class="logo">
 					{Logo}
-				</div>-->
-
-<div style='float:right'>
-
-<p style='mso-line-height-alt:3.0pt'><b><span style='font-size:10.0pt'>211
+				</div>-->211
 Quality Circle <br>
 College Station, TX 77845<br>
 Phone +1 (979) 691-7700<br>
 Fax +1 (979) 691-7750<br>
 www.cognizant.com<o:p></o:p></span></b></p>
 
-</div>
-
-<div>
-
-<div style='margin-bottom:18.75pt'>
-
-<p class=datetxt2>February <span class=GramE>15 ,</span> 2018</p>
-
-<div style='margin-bottom:18.75pt'>
-
-<div style='margin-top:7.5pt;margin-bottom:18.75pt'>
+<p class=datetxt2>February <span class=GramE>15 ,</span> 2018<o:p></o:p></p>
 
 <p class=MsoNormal style='mso-line-height-alt:2.25pt'><span style='mso-fareast-font-family:
 "Times New Roman"'>U.S. Department of Homeland Security<br>
 United States Citizenship and Immigration Services<o:p></o:p></span></p>
 
-</div>
-
-</div>
-
-</div>
-
-<div style='margin-bottom:18.75pt'>
-
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 text-align:justify'><span class=bold3>Re:</span> Mr. Rajiv Chaudhuri </p>
-
-</div>
 
 <div style='margin-bottom:18.75pt'>
 
@@ -1635,8 +1367,8 @@ employees, Cognizant managers use a multitude of communication media and tools,
 including reporting and meetings, in person or through technology, such as
 video conferencing, desktop video, VoIP, mobile phones, and instant messaging,
 as well as through Cognizant systems and tools. As Mr. Rajiv Chaudhuri's direct
-Cognizant manager, I oversee, assign, control and review his work on a regular basis
-both in-person and with the alternate means of communication noted above.</p>
+Cognizant manager, I oversee, assign, control and review his work on a regular
+basis both in-person and with the alternate means of communication noted above.</p>
 
 </div>
 
@@ -1734,8 +1466,8 @@ activities: </p>
   <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
   background:white'><span style='mso-fareast-font-family:"Times New Roman"'>Create
   or Update documentation in support of development efforts. Documents include
-  detailed specifications, implementation guides, architecture diagrams and/or
-  design documents.<o:p></o:p></span></p>
+  detailed specifications, implementation guides, architecture diagrams and/or design
+  documents.<o:p></o:p></span></p>
   </td>
   <td style='border-top:none;border-left:none;border-bottom:solid #207DA8 1.0pt;
   border-right:solid #207DA8 1.0pt;mso-border-top-alt:solid #207DA8 .75pt;
@@ -1756,10 +1488,10 @@ activities: </p>
   mso-border-left-alt:solid #207DA8 .75pt;mso-border-alt:solid #207DA8 .75pt;
   padding:3.75pt 3.75pt 3.75pt 3.75pt'>
   <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>Implementation
-  of scalable complex application functionalities using programming languages- <span
-  style='mso-spacerun:yes'>&nbsp;</span>Java, J2EE; frameworks - <span
-  style='mso-spacerun:yes'>&nbsp;</span>Spring Core, Spring REST, Spring Boot, Spring
-  MVC, Spring Gemfire, Spring LDAP, Spring WS, Spring AOP<o:p></o:p></span></p>
+  of scalable complex application functionalities using programming
+  languages-<span style='mso-spacerun:yes'>&nbsp; </span>Java, J2EE; frameworks
+  -<span style='mso-spacerun:yes'>&nbsp; </span>Spring Core, Spring REST,
+  Spring Boot, Spring MVC, Spring Gemfire, Spring LDAP, Spring WS, Spring AOP<o:p></o:p></span></p>
   </td>
   <td style='border-top:none;border-left:none;border-bottom:solid #207DA8 1.0pt;
   border-right:solid #207DA8 1.0pt;mso-border-top-alt:solid #207DA8 .75pt;
@@ -1780,9 +1512,9 @@ activities: </p>
   mso-border-left-alt:solid #207DA8 .75pt;mso-border-alt:solid #207DA8 .75pt;
   padding:3.75pt 3.75pt 3.75pt 3.75pt'>
   <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>Follow
-  the Test-Driven Development approach and write test framework using JUnit, Spring
-  Test, JMeter and execute the unit test to ensure the code quality and to meet
-  overall application functionality as per requirement.<o:p></o:p></span></p>
+  the Test-Driven Development approach and write test framework using JUnit,
+  Spring Test, JMeter and execute the unit test to ensure the code quality and
+  to meet overall application functionality as per requirement.<o:p></o:p></span></p>
   </td>
   <td style='border-top:none;border-left:none;border-bottom:solid #207DA8 1.0pt;
   border-right:solid #207DA8 1.0pt;mso-border-top-alt:solid #207DA8 .75pt;
@@ -1803,8 +1535,8 @@ activities: </p>
   mso-border-left-alt:solid #207DA8 .75pt;mso-border-alt:solid #207DA8 .75pt;
   padding:3.75pt 3.75pt 3.75pt 3.75pt'>
   <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>Building
-  reusable components and designing the custom framework using different open source
-  API, third party tools and use those components at application<o:p></o:p></span></p>
+  reusable components and designing the custom framework using different open
+  source API, third party tools and use those components at application<o:p></o:p></span></p>
   </td>
   <td style='border-top:none;border-left:none;border-bottom:solid #207DA8 1.0pt;
   border-right:solid #207DA8 1.0pt;mso-border-top-alt:solid #207DA8 .75pt;
@@ -1851,9 +1583,9 @@ activities: </p>
   padding:3.75pt 3.75pt 3.75pt 3.75pt'>
   <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
   background:white'><span style='mso-fareast-font-family:"Times New Roman"'>Serve
-  as a technical lead for an Agile team and actively participate in all Agile
-  ceremonies. Participate in all team ceremonies including planning, grooming,
-  product demonstration and team retrospectives<o:p></o:p></span></p>
+  as a technical lead for an Agile team and actively participate in all Agile ceremonies.
+  Participate in all team ceremonies including planning, grooming, product
+  demonstration and team retrospectives<o:p></o:p></span></p>
   </td>
   <td style='border-top:none;border-left:none;border-bottom:solid #207DA8 1.0pt;
   border-right:solid #207DA8 1.0pt;mso-border-top-alt:solid #207DA8 .75pt;
@@ -1876,8 +1608,8 @@ activities: </p>
   <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
   background:white'><span style='mso-fareast-font-family:"Times New Roman"'>Coordinate
   with Performance Engineer team; conduct the performance testing and fine tune
-  the application including JVM OPTS settings, fine tune the code to meet the performance
-  benchmark based on peek load of the session.<o:p></o:p></span></p>
+  the application including JVM OPTS settings, fine tune the code to meet the
+  performance benchmark based on peek load of the session.<o:p></o:p></span></p>
   </td>
   <td style='border-top:none;border-left:none;border-bottom:solid #207DA8 1.0pt;
   border-right:solid #207DA8 1.0pt;mso-border-top-alt:solid #207DA8 .75pt;
@@ -1899,9 +1631,10 @@ activities: </p>
   padding:3.75pt 3.75pt 3.75pt 3.75pt'>
   <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
   background:white'><span style='mso-fareast-font-family:"Times New Roman"'>Coordinate
-  Production Deployment both at on-premise and cloud environment; Provide Post Production
-  Warranty Support; Production Issue analysis and figure out improvement area; document
-  the same and addressed the same as feature to improve the system overall quality.<o:p></o:p></span></p>
+  Production Deployment both at on-premise and cloud environment; Provide Post
+  Production Warranty Support; Production Issue analysis and figure out
+  improvement area; document the same and addressed the same as feature to
+  improve the system overall quality.<o:p></o:p></span></p>
   </td>
   <td style='border-top:none;border-left:none;border-bottom:solid #207DA8 1.0pt;
   border-right:solid #207DA8 1.0pt;mso-border-top-alt:solid #207DA8 .75pt;
@@ -2016,8 +1749,6 @@ text-align:justify'>Sincerely,</p>
 <p class=MsoNoSpacing><o:p>&nbsp;</o:p></p>
 
 <p class=MsoNoSpacing>Pradeep Vijayan</p>
-
-</div>
 
 </div>
 
