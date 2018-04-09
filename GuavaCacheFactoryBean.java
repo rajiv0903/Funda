@@ -1,4 +1,4 @@
-package com.tracfone.ws.cache.guava;
+package com.rajiv.ws.cache.guava;
 
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
@@ -11,7 +11,7 @@ import com.google.common.cache.CacheBuilder;
  * Generic implementation of GUAVA cache, whoever using this factory need to add below configuration into the spring xml file. 
  * 
  * <bean id="cacheFromGuavaFactoryBean"
-      class="com.tracfone.ws.cache.guava.GuavaCacheFactoryBean">
+      class="com.rajiv.ws.cache.guava.GuavaCacheFactoryBean">
       <property name="expireMillisecondsAfterWrite" value="$SPRINGFARM{GuavaCacheExpireMillisecondsAfterWrite}" />
 		<property name="maximumSize" value="$SPRINGFARM{GuavaCacheMaximumSize}" />
 	</bean>
@@ -26,8 +26,7 @@ import com.google.common.cache.CacheBuilder;
 					return callCBOServicePlanSelectorByCriteria(applicationContext, event, partClass);
 				}
 			});
- * 
- * @author Manzoor Ahmed
+
  *
  * @param <K>
  * @param <V>
