@@ -1,7 +1,0 @@
-*.iml
-.idea
-*.csv
-/target/
-.classpath
-.project
-.settings
