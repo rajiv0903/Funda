@@ -1,0 +1,438 @@
+swagger: '2.0'
+info:
+  description: >-
+    This is the MBS Automation portal where the lenders and traders login to
+    submit, view, update the trade relation information
+  version: '1.0'
+  title: Swagger MBS Portal
+  termsOfService: 'http://swagger.io/terms/'
+  contact:
+    email: mtascrum1@fanniemae.com
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0'
+host: mbsp01-devl-webapp.j22g6rr3zz.us-east-1.elasticbeanstalk.com
+basePath: /
+tags:
+  - name: transaction-request-controller
+    description: Transaction Request Controller
+paths:
+  /fnmapi/mbscleartransactions:
+    delete:
+      tags:
+        - transaction-request-controller
+      summary: clearAllTransactionRequests
+      operationId: clearAllTransactionRequestsUsingDELETE
+      consumes:
+        - application/json
+      produces:
+        - application/json
+        - application/vnd.fnma-v1+json
+      parameters:
+        - name: Accept
+          in: header
+          description: Accept
+          required: true
+          type: string
+      responses:
+        '200':
+          description: OK
+        '204':
+          description: No Content
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+  /fnmapi/mbslendertransactions:
+    post:
+      tags:
+        - transaction-request-controller
+      summary: createTransactionRequestLender
+      operationId: createTransactionRequestLenderUsingPOST
+      consumes:
+        - application/json
+        - application/vnd.fnma-v1+json
+      produces:
+        - application/json
+        - application/vnd.fnma-v1+json
+      parameters:
+        - in: body
+          name: transactionRequestPO
+          description: transactionRequestPO
+          required: true
+          schema:
+            $ref: '#/definitions/TransactionRequestPO'
+        - name: Accept
+          in: header
+          description: Accept
+          required: true
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/TransactionRequestPO'
+        '201':
+          description: Created
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+        '500':
+          description: Internal server error
+  '/fnmapi/mbslendertransactions/{lenderid}':
+    get:
+      tags:
+        - transaction-request-controller
+      summary: getTransactionRequestsLender
+      operationId: getTransactionRequestsLenderUsingGET
+      consumes:
+        - application/json
+        - application/vnd.fnma-v1+json
+      produces:
+        - application/json
+        - application/vnd.fnma-v1+json
+      parameters:
+        - name: lenderid
+          in: path
+          description: lenderid
+          required: true
+          type: string
+        - name: statetype
+          in: query
+          description: statetype
+          required: false
+          type: string
+        - name: Accept
+          in: header
+          description: Accept
+          required: true
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/TransactionRequestPO"
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+        '500':
+          description: Internal server error
+  '/fnmapi/mbslendertransactions/{lenderid}/{transreqid}':
+    get:
+      tags:
+        - transaction-request-controller
+      summary: getTransactionRequestsLender
+      operationId: getTransactionRequestsLenderUsingGET_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+        - application/vnd.fnma-v1+json
+      parameters:
+        - name: lenderid
+          in: path
+          description: lenderid
+          required: true
+          type: string
+        - name: transreqid
+          in: path
+          description: transreqid
+          required: true
+          type: string
+        - name: statetype
+          in: query
+          description: statetype
+          required: false
+          type: string
+        - name: Accept
+          in: header
+          description: Accept
+          required: true
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/TransactionRequestPO"
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+        '500':
+          description: Internal server error
+  /fnmapi/mbstradertransactions:
+    get:
+      tags:
+        - transaction-request-controller
+      summary: getTransactionRequestsTrader
+      operationId: getTransactionRequestsTraderUsingGET
+      consumes:
+        - application/json
+      produces:
+        - application/json
+        - application/vnd.fnma-v1+json
+      parameters:
+        - name: statetype
+          in: query
+          description: statetype
+          required: false
+          type: string
+        - name: Accept
+          in: header
+          description: Accept
+          required: true
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/TransactionRequestPO"
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+        '500':
+          description: Internal server error
+  '/fnmapi/mbstradertransactions/{statetype}':
+    get:
+      tags:
+        - transaction-request-controller
+      summary: getTransactionRequestsTrader
+      operationId: getTransactionRequestsTraderUsingGET_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+        - application/vnd.fnma-v1+json
+      parameters:
+        - name: statetype
+          in: path
+          description: statetype
+          required: true
+          type: string
+        - name: Accept
+          in: header
+          description: Accept
+          required: true
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/TransactionRequestPO"
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+        '500':
+          description: Internal server error
+  '/fnmapi/mbstradertransactions/{transreqid}':
+    get:
+      tags:
+        - transaction-request-controller
+      summary: getTransactionRequestsTrader
+      operationId: getTransactionRequestsTraderUsingGET_2
+      consumes:
+        - application/json
+      produces:
+        - application/json
+        - application/vnd.fnma-v1+json
+      parameters:
+        - name: transreqid
+          in: path
+          description: transreqid
+          required: true
+          type: string
+        - name: Accept
+          in: header
+          description: Accept
+          required: true
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/TransactionRequestPO"
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+        '500':
+          description: Internal server error
+  '/fnmapi/mbstradertransactions/{transreqid}/{statetype}':
+    get:
+      tags:
+        - transaction-request-controller
+      summary: getTransactionRequestsTrader
+      operationId: getTransactionRequestsTraderUsingGET_3
+      consumes:
+        - application/json
+      produces:
+        - application/json
+        - application/vnd.fnma-v1+json
+      parameters:
+        - name: transreqid
+          in: path
+          description: transreqid
+          required: true
+          type: string
+        - name: statetype
+          in: path
+          description: statetype
+          required: true
+          type: string
+        - name: Accept
+          in: header
+          description: Accept
+          required: true
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/TransactionRequestPO"
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+        '500':
+          description: Internal server error
+definitions:
+  ProductIdPO:
+    type: object
+    properties:
+      identifier:
+        type: integer
+        format: int64
+      sourceType:
+        type: string
+        enum:
+          - PU
+      type:
+        type: string
+        enum:
+          - MBS
+  ProductPO:
+    type: object
+    properties:
+      agencyType:
+        type: string
+      description:
+        type: string
+      nameCode:
+        type: string
+      nameCodeSortOrder:
+        type: integer
+        format: int32
+      productId:
+        $ref: '#/definitions/ProductIdPO'
+      securityTerm:
+        type: integer
+        format: int32
+  ProductPricingPO:
+    type: object
+    properties:
+      buySellIndicator:
+        type: string
+      effectiveDate:
+        type: string
+      marketTermType:
+        type: integer
+        format: int32
+      passThroughRate:
+        type: string
+      productId:
+        $ref: '#/definitions/ProductIdPO'
+      productNameCode:
+        type: string
+      settlementDate:
+        type: string
+  TransactionRequestPO:
+    type: object
+    properties:
+      acceptanceDate:
+        type: string
+        example: 2001-07-04T12:08:56.235-0700
+      lenderId:
+        type: string
+      pricePercent:
+        type: string
+      pricePercentHandleText:
+        type: string
+      pricePercentTicksText:
+        type: string
+      product:
+        $ref: '#/definitions/ProductPO'
+      stateType:
+        type: string
+        enum:
+          - LENDER_OPEN
+          - TRADER_PRICED
+          - TRADER_PASSED
+          - LENDER_ACCEPTED
+          - LENDER_REJECTED
+          - TRADER_CONFIRMED
+          - TRADER_REJECTED
+          - PENDING_EXECUTION
+          - EXECUTED
+          - LENDER_TIMEOUT
+          - TRADER_TIMEOUT
+          - ERROR
+      submissionDate:
+        type: string
+        example: 2001-07-04T12:08:56.235-0700
+      tradeAmount:
+        type: string
+      tradeBuySellType:
+        type: string
+      tradeCouponRate:
+        type: string
+      tradeSettlementDate:
+        type: string
+        example: 2001-07-04
+      traderId:
+        type: string
+      transReqId:
+        type: string

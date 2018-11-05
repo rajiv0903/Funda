@@ -1,0 +1,54 @@
+<configuration scan="true">
+	<include resource="org/springframework/boot/logging/logback/base.xml"/>
+	<property name="LOGS_HOME" value="/var/log" />
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<layout>
+			<Pattern>
+				%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] [%-5level] -[%mdc{Fannie-Mae-Correlation-ID}] [%mdc{USER_ID}] [%mdc{TRANSACTION_ID}] [%mdc{ERROR_TYPE}] [%mdc{ERROR_PROCESS_ID}] [%mdc{ERROR_SOURCE_METHOD}] [%mdc{ERROR_SOURCE_METHOD_SIGNATURE}] [%mdc{SOURCE_METHOD_ARGS}]	[%mdc{ERROR_MESSGE}] %c{1} - %msg%n
+			</Pattern>
+		</layout>
+	</appender>
+
+	<appender name="FILE-SERVICE"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		
+		<file>${LOGS_HOME}/mbsportalpuadapter.log</file>
+
+		<rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+			<fileNamePattern>${LOGS_HOME}/mbsportalpuadapter.log.%i
+			</fileNamePattern>
+			<minIndex>1</minIndex>
+			<maxIndex>30</maxIndex>
+		</rollingPolicy>
+		
+		<triggeringPolicy
+			class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+			<maxFileSize>10MB</maxFileSize>
+		</triggeringPolicy>
+		
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<Pattern>
+				%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] [%-5level] -[%mdc{Fannie-Mae-Correlation-ID}] [%mdc{USER_ID}] [%mdc{TRANSACTION_ID}] [%mdc{ERROR_TYPE}] [%mdc{ERROR_PROCESS_ID}] [%mdc{ERROR_SOURCE_METHOD}] [%mdc{ERROR_SOURCE_METHOD_SIGNATURE}] [%mdc{SOURCE_METHOD_ARGS}]	[%mdc{ERROR_MESSGE}] %c{1} - %msg%n
+			</Pattern>
+		</encoder>
+	</appender>
+	
+	<!-- custom logging levels -->
+    <logger name="logging.level.org.springframework.web" level="warn" />
+    <logger name="logging.level.org.springframework" level="warn" />
+    <logger name="logging.level.com.fanniemae.mbsportal" level="info" />
+	<logger name="logging.level.com.fanniemae.fnmpfj.gemfire.dao" level="warn" />
+	<logger name="logging.level.org.apache.http.conn.HttpClientConnectionOperator" level="debug" />
+
+	<logger name="com.fanniemae.mbsportal" level="info" additivity="false">
+		<appender-ref ref="FILE-SERVICE" />
+		<appender-ref ref="STDOUT" />
+	</logger>
+	
+	<root level="info">
+		<appender-ref ref="FILE-SERVICE" />
+		<appender-ref ref="STDOUT" />
+	</root>
+
+</configuration>

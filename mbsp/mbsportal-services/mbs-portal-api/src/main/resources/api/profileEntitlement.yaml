@@ -1,0 +1,110 @@
+swagger: '2.0'
+info:
+  description: Api Documentation
+  version: '1.0'
+  title: Api Documentation
+  termsOfService: 'urn:tos'
+  contact: {}
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0'
+host: 'mbsp01-devl-webapp.j22g6rr3zz.us-east-1.elasticbeanstalk.com'
+basePath: /
+tags:
+  - name: profile-entitlement-controller
+    description: Profile Entitlement Controller
+paths:
+  /fmnapi/mbsprofileentitlements:
+    get:
+      tags:
+        - profile-entitlement-controller
+      summary: getEntitledProfile
+      operationId: getEntitledProfileUsingGET
+      consumes:
+        - application/json
+      produces:
+        - application/json
+        - application/vnd.fnma-v1+json
+      parameters:
+        - name: Accept
+          in: header
+          description: Accept Header
+          required: true
+          type: string
+        - name: x-fnma-channel
+          in: header
+          description: Channel Header
+          required: true
+          type: string
+        - name: x-fnma-sub-channel
+          in: header
+          description: Sub Channel Header
+          required: true
+          type: string
+        - name: x-fnma-sessionid
+          in: header
+          description: Session ID Header
+          required: true
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ProfileEntitlementPO'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+
+definitions:
+  ProfileEntitlementPO:
+    type: object
+    properties:
+      cutstomerName:
+        type: string
+      dealerOrgId:
+        type: string
+      dealerOrgName:
+        type: string
+      defaultSellerServicerNo:
+        type: string
+      emailAddress:
+        type: string
+      fannieMaeUser:
+        type: boolean
+      firstName:
+        type: string
+      institutionId:
+        type: string
+      lastName:
+        type: string
+      lenderDetails:
+        type: string
+      mobileNumber:
+        type: string
+      roles:
+        type: array
+        items:
+          $ref: '#/definitions/ProfileEntitlementRolePO'
+      sellerSerivcerNo:
+        type: string
+      sellerServiceDetails:
+        type: array
+        items:
+          type: string
+      userName:
+        type: string
+      workNumber:
+        type: string
+  ProfileEntitlementRolePO:
+    type: object
+    properties:
+      name:
+        type: string
+      permissions:
+        type: array
+        items:
+          type: string
+

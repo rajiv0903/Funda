@@ -1,0 +1,48 @@
+<ESBConfig>
+	<EMSConfiguration>
+		<EMSProperties>emsconfig.properties</EMSProperties>
+
+		<!-- DESTINATIONS -->
+		<!-- ESBClient needs the 5 standard queues/topics defined. ODS is only
+			really using NOTIFY to notify CLE and SUBSCRIBE.IN to receive incoming messages -->
+
+		<!-- Not used -->
+		<Destination jmstype="TOPIC" esbtype="OUT"
+					 name="FNM.CAPMKTS.ALL.APP1.OUT" />
+
+		<!-- To receive incoming messages in ODS, EFSS and GPP/TCM -->
+		<Destination jmstype="QUEUE" esbtype="SUBSCRIBED.IN" name="FNM.FMN.MSR00261.MBSPORTAL.ODS.V1.SUBSCRIBED.IN"></Destination>
+		<Destination jmstype="QUEUE" esbtype="SUSPEND" name="FNM.FMN.MSR00261.MBSPORTAL.ODS.V1.SUBSCRIBED.SUSPEND"/>
+		<Destination jmstype="QUEUE" esbtype="SYNCRESPONSE.IN" name="FNM.FMN.MSR00261.MBSPORTAL.ODS.V1.SUBSCRIBED.SYNCRESPONSE.IN"/>
+
+
+		<!-- <Destination jmstype="QUEUE" esbtype="SUBSCRIBED.IN"
+			name="FNM.CAPMKTS.SECURITIES.ODS.BUS_MSG_LISTENER.v1_0.SUBSCRIBED.IN"></Destination>
+		<Destination jmstype="QUEUE" esbtype="SUSPEND"
+			name="FNM.CAPMKTS.SECURITIES.ODS.BUS_MSG_LISTENER.v1_0.SUSPEND" />
+		<Destination jmstype="QUEUE" esbtype="SYNCRESPONSE.IN"
+			name="FNM.CAPMKTS.SECURITIES.ODS.BUS_MSG_LISTENER.v1_0.SYNCRESPONSE.IN" /> -->
+
+		<!-- To send messags to CLE -->
+		<Destination jmstype="TOPIC" esbtype="NOTIFY"
+					 name="FNM.CAPMKTS.ALL.APP1.NOTIFY" />
+
+		<!-- <CompressionEnabled>false</CompressionEnabled> <CompressionThreshold>20000</CompressionThreshold> -->
+
+		<!-- Use this parameter if not feeding the instance through the ESbCLient
+			constructor -->
+		<!-- <ClientCredentialsClass>com.fanniemae.securitiesods.ods_core.commonservices.cle.TesterClientCredentials</ClientCredentialsClass> -->
+		<ClientCredentialsClass>com.fanniemae.mbsportal.util.MBSEsbClientCredentials</ClientCredentialsClass>
+	</EMSConfiguration>
+	<EventConfiguration>
+		<Producer>bpydevl</Producer>
+		<ApplicationId>MBSPORTAL</ApplicationId>
+		<InitiatingUserId>NONE</InitiatingUserId>
+		<AuthorizationSource>NONE</AuthorizationSource>
+		<!--<Property name="PROP1" value="VAL1"/> <Property name="prop2" value="val2"/>
+			<RoutingProperty name="name" value="valeue"/> -->
+
+	</EventConfiguration>
+</ESBConfig>
+
+

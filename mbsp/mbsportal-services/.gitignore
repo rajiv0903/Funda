@@ -1,0 +1,11 @@
+*.iml
+
+.idea
+.class
+*/target/
+/target/
+.classpath
+.project
+.settings
+mbs-portal-ecf/src/main/java/**/*.java
+mbs-portal-calendar-schema/src/main/java/**/*.java

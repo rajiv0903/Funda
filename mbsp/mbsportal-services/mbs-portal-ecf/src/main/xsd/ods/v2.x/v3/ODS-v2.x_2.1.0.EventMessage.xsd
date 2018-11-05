@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+			xmlns:evm="http://www.fanniemae.com/enterprisedata/core/subjectarea/security/eventMessage/v2.1.0" 
+			xmlns:base="http://www.fanniemae.com/enterprisedata/core/subjectarea/security/base/v2.1.0" 
+			targetNamespace="http://www.fanniemae.com/enterprisedata/core/subjectarea/security/eventMessage/v2.1.0" 
+			elementFormDefault="qualified" 
+			attributeFormDefault="unqualified" 
+			version="2.x">
+	<xs:import namespace="http://www.fanniemae.com/enterprisedata/core/subjectarea/security/base/v2.1.0" schemaLocation="ODS-v2.x_2.1.0.Base.xsd"/>
+	<!--###################### Complex Types #################### -->
+	<xs:complexType name="SecOdsEventMessage" abstract="true">
+		<xs:sequence>
+			<xs:element name="event" type="base:Event" minOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+		<xs:complexType name="ShakeoutEventMessage">
+		<xs:complexContent>
+			<xs:extension base="evm:SecOdsEventMessage">
+				<xs:sequence>
+					<xs:any namespace="##any" processContents="strict"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="ExpectationEventMessage">
+		<xs:complexContent>
+			<xs:extension base="evm:SecOdsEventMessage">
+				<xs:sequence>
+					<xs:choice minOccurs="1">
+						<xs:element name="securityExpectation" type="base:SecurityExpectation"/>
+						<xs:element name="cashExpectation" type="base:CashExpectation"/>
+					</xs:choice>
+					<xs:element name="message" type="base:SecuritySettlementMessage" minOccurs="0"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="TradeRelationshipEventMessage">
+		<xs:complexContent>
+			<xs:extension base="evm:SecOdsEventMessage">
+				<xs:sequence>
+					<xs:element name="tradeGroupAssociations" type="base:TradeGroupAssociation" minOccurs="2" maxOccurs="200000"/>
+					<xs:element name="tradeGroup" type="base:TradeGroup" minOccurs="1"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="TradeEventMessage">
+		<xs:complexContent>
+			<xs:extension base="evm:SecOdsEventMessage">
+				<xs:sequence>
+					<xs:element name="trade" type="base:Trade" minOccurs="1"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="SecuritySettlementEventMessage">
+		<xs:complexContent>
+			<xs:extension base="evm:SecOdsEventMessage">
+				<xs:sequence>
+					<xs:choice minOccurs="1">
+						<xs:element name="securityExpectation" type="base:SecurityExpectation"/>
+						<xs:element name="cashExpectation" type="base:CashExpectation"/>
+					</xs:choice>
+					<xs:element name="message" type="base:SecuritySettlementMessage" minOccurs="1"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="ExpectationRelationshipEventMessage">
+		<xs:complexContent>
+			<xs:extension base="evm:SecOdsEventMessage">
+				<xs:sequence>
+					<xs:element name="financialExpectationGroup" type="base:FinancialExpectationGroup" minOccurs="1"/>
+					<xs:element name="financialExpectationGroupAssociation" type="base:FinancialExpectationGroupAssociation" minOccurs="2" maxOccurs="200000"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="SecurityIssuanceExpectationSettlementEventMessage">
+		<xs:complexContent>
+			<xs:extension base="evm:SecOdsEventMessage">
+				<xs:sequence>
+					<xs:element name="SecurityIssuanceExpectationSettlement" type="base:SecurityIssExpectationSettle" minOccurs="1" maxOccurs="1"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!--###################### Elements #################### -->
+	<xs:element name="EventMessage">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:choice minOccurs="1">
+					<xs:element name="TradeEventMessage" type="evm:TradeEventMessage"/>
+					<xs:element name="ExpectationEventMessage" type="evm:ExpectationEventMessage"/>
+					<xs:element name="TradeRelationshipEventMessage" type="evm:TradeRelationshipEventMessage"/>
+					<xs:element name="SecuritySettlementEventMessage" type="evm:SecuritySettlementEventMessage"/>
+					<xs:element name="ExpectationRelationshipEventMessage" type="evm:ExpectationRelationshipEventMessage"/>
+					<xs:element name="SecurityIssuanceEventMessage" type="evm:SecurityIssuanceExpectationSettlementEventMessage"/>
+					<xs:element name="ShakeoutEventMessage" type="evm:ShakeoutEventMessage"/>
+				</xs:choice>
+			</xs:sequence>
+			<xs:attribute name="ecfVersion" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
